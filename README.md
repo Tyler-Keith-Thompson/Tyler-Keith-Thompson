@@ -3,7 +3,11 @@
 - 🌱 I’m currently learning Rust in my spare time, but mostly I'm an Apple Developer. 
 
 #### About me:
-I've been writing code since 2008. I became an Apple developer in 2012 and have always loved it. Swift is absolutely my favorite programming language and I'm always down for sharing what I've learned and learning from others. I joined WWT late 2016, and I currently work in the Virtual Office.
+My primary motivation is helping people. As Software Engineer's we can sometimes get so wrapped up in a problem we forget what the end goal is. I do my best to make sure the software I help write makes a difference, and is based off of user needs.
+
+I spend most of my free time honing my skills in my favorite programming language (Swift). I've become an avid believer in automated testing and DevOps practices. I incorporate that into both my professional code and my personal code.
+
+I have managed to become a Principal Engineer largely by working with people far smarter than I am, and learning from them. I owe much of my success specifically to World Wide Technology where I continue to enjoy opportunities to work with a very diverse group of intelligent people.
 <!--
 **Tyler-Keith-Thompson/Tyler-Keith-Thompson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
