@@ -1,5 +1,5 @@
 ### Hi there 👋
-- 🔭 I’m currently working on CucumberSwift, it's been a pet project for a while, I wanted an easier way of doing BDD on iOS!
+- 🔭 I’m primarily working on [SwiftCurrent](https://www.github.com/wwt/SwiftCurrent) in my spare time, I also dedicate some time to [CucumberSwift](https://www.github.com/tyler-keith-thompson/CucumberSwift).
 - 🌱 I’m currently learning Rust in my spare time, but mostly I'm an Apple Developer. 
 
 #### About me:
