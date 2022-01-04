@@ -187,16 +187,8 @@ struct IndexHTML {
                             Div {
                                 Div {
                                     Div {
-                                        Div { // should be a section
-                                            Div {
-                                                Div {
-                                                    H2("About Me").class("title-lg text-upper")
-                                                    List(context.site.content.aboutMe.components(separatedBy: "\n\n")) {
-                                                        Paragraph($0)
-                                                    }.style("list-style-type: none;padding: 0;margin: 0;")
-                                                }.class("col-sm-12")
-                                            }.class("row")
-                                        }.class("section brd-btm padd-box")
+                                        aboutMe
+                                        personalInformation
                                     }.class("crt-paper-cont paper-padd clear-mrg")
                                 }.class("crt-paper clearfix")
                             }.class("crt-paper-layers")
@@ -707,5 +699,75 @@ struct IndexHTML {
          </body>
          </html>
          */
+    }
+
+    var aboutMe: Component {
+        Div { // should be a section
+            Div {
+                Div {
+                    H2("About Me").class("title-lg text-upper")
+                    List(context.site.content.aboutMe.components(separatedBy: "\n\n")) {
+                        Paragraph($0)
+                    }.style("list-style-type: none;padding: 0;margin: 0;")
+                }.class("col-sm-12")
+            }.class("row")
+        }.class("section brd-btm padd-box")
+    }
+
+    var personalInformation: Component {
+        Div { // should be a section
+            Div {
+                Div {
+                    H2("personal information").class("title-thin text-muted")
+                    Element(name: "dl") {
+                        Element(name: "dt") { Text("Full Name") }.class("text-upper")
+                        Element(name: "dd") { Text(context.site.content.profileName) }
+
+                        Element(name: "dt") { Text("RESIDENCE") }.class("text-upper")
+                        Element(name: "dd") { Text(context.site.content.residence) }
+                    }.class("dl-horizontal clear-mrg")
+                }.class("col-sm-6 clear-mrg")
+
+                Div {
+                    H2("primary languages/tech stacks").class("title-thin text-muted")
+                    ProficiencySlider(name: "Swift", currentLevel: 10).html
+                    ProficiencySlider(name: "iOS SDK", currentLevel: 8).html
+                    ProficiencySlider(name: "Server Side Swift", currentLevel: 7).html
+                    ProficiencySlider(name: "macOS/watchOS/tvOS SDK", currentLevel: 6).html
+                }.class("col-sm-6 clear-mrg")
+            }.class("row")
+        }.class("section brd-btm padd-box")
+    }
+
+    private struct ProficiencySlider {
+        let name: String
+        let currentLevel: UInt8
+
+        var proficiencyLevel: String {
+            switch currentLevel {
+                case 0...4: return "beginner"
+                case 5...6: return "intermediate"
+                case 7...8: return "advanced"
+                default: return "highly proficient"
+            }
+        }
+
+        var html: Component {
+            Div {
+                Element(name: "Strong") {
+                    Text(name)
+                }.class("progress-title")
+                Span {
+                    ComponentGroup(members: (0...currentLevel).map { _ in Span().class("bullet fill") })
+                    ComponentGroup(members: (0..<10-currentLevel).map { _ in Span().class("bullet") })
+                }.class("progress-bar")
+                Span(proficiencyLevel).class("progress-text text-muted")
+            }
+            .class("progress-bullets crt-animate")
+            .attribute(named: "role", value: "progressbar")
+            .attribute(named: "aria-valuenow", value: "\(currentLevel)")
+            .attribute(named: "aria-valuemin", value: "0")
+            .attribute(named: "aria-valuemax", value: "10")
+        }
     }
 }
