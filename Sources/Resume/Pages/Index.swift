@@ -24,36 +24,40 @@ struct IndexHTML {
             .head(for: index, on: context.site),
             .body {
                 mainNav
-                Navigation {
-                    List {
-                        ListItem {
-                            Link(url: "#about") {
-                                Image(url: "images/uploads/avatar/avatar-58x58-default.png", description: "Avatar picture")
-                                    .class("avatar avatar-42")
-                            }.attribute(named: "data-tooltip", value: "About")
-                        }
-                        ListItem {
-                            Link(url: "#experience") {
-                                Span { }.class("crt-icon crt-icon-experience")
-                            }.attribute(named: "data-tooltip", value: "Experience")
-                        }
-                        ListItem {
-                            Link(url: "#portfolio") {
-                                Span { }.class("crt-icon crt-icon-portfolio")
-                            }.attribute(named: "data-tooltip", value: "Portfolio")
-                        }
-                        ListItem {
-                            Link(url: "#testimonials") {
-                                Span { }.class("crt-icon crt-icon-references")
-                            }.attribute(named: "data-tooltip", value: "References")
-                        }
-                        ListItem {
-                            Link(url: "#contact") {
-                                Span { }.class("crt-icon crt-icon-contact")
-                            }.attribute(named: "data-tooltip", value: "Contact")
-                        }
-                    }.class("clear-list")
-                }.id("crt-nav-sm").class("crt-nav hidden-lg hidden-md")
+                Div {
+                    Navigation {
+                        List {
+                            ListItem {
+                                Link(url: "#about") {
+                                    Image("images/uploads/avatar/avatar-58x58-default.png")
+                                        .class("avatar avatar-58")
+                                        .attribute(named: "width", value: "58")
+                                        .attribute(named: "height", value: "58")
+                                }.attribute(named: "data-tooltip", value: "About")
+                            }
+                            ListItem {
+                                Link(url: "#experience") {
+                                    Span().class("crt-icon crt-icon-experience")
+                                }.attribute(named: "data-tooltip", value: "Experience")
+                            }
+                            ListItem {
+                                Link(url: "#portfolio") {
+                                    Span().class("crt-icon crt-icon-portfolio")
+                                }.attribute(named: "data-tooltip", value: "Portfolio")
+                            }
+                            ListItem {
+                                Link(url: "#testimonials") {
+                                    Span().class("crt-icon crt-icon-references")
+                                }.attribute(named: "data-tooltip", value: "References")
+                            }
+                            ListItem {
+                                Link(url: "#contact") {
+                                    Span().class("crt-icon crt-icon-contact")
+                                }.attribute(named: "data-tooltip", value: "Contact")
+                            }
+                        }.class("clear-list").style("display: inline;")
+                    }.id("crt-nav").class("crt-nav")
+                }.id("crt-nav-wrap").style("position: sticky;top: 0;")
                 Wrapper {
                     Div {
                         Div {
@@ -86,55 +90,6 @@ struct IndexHTML {
                                 }.class("crt-side-box-item")
                             }.id("crt-side-box")
                         }.id("crt-side-box-wrap").class("crt-sticky")
-                        Div {
-                            Div {
-                                Div {
-                                    Div {
-                                        Navigation {
-                                            List {
-                                                ListItem {
-                                                    Link(url: "#about") {
-                                                        Image("images/uploads/avatar/avatar-58x58-default.png")
-                                                            .class("avatar avatar-58")
-                                                            .attribute(named: "width", value: "58")
-                                                            .attribute(named: "height", value: "58")
-                                                    }.attribute(named: "data-tooltip", value: "About")
-                                                }
-                                                ListItem {
-                                                    Link(url: "#experience") {
-                                                        Span().class("crt-icon crt-icon-experience")
-                                                    }.attribute(named: "data-tooltip", value: "Experience")
-                                                }
-                                                ListItem {
-                                                    Link(url: "#portfolio") {
-                                                        Span().class("crt-icon crt-icon-portfolio")
-                                                    }.attribute(named: "data-tooltip", value: "Portfolio")
-                                                }
-                                                ListItem {
-                                                    Link(url: "#testimonials") {
-                                                        Span().class("crt-icon crt-icon-references")
-                                                    }.attribute(named: "data-tooltip", value: "References")
-                                                }
-                                                ListItem {
-                                                    Link(url: "#contact") {
-                                                        Span().class("crt-icon crt-icon-contact")
-                                                    }.attribute(named: "data-tooltip", value: "Contact")
-                                                }
-                                            }.class("clear-list")
-                                        }.id("crt-nav").class("crt-nav")
-                                    }.class("crt-nav-scroll")
-                                    Div {
-                                        Span().class("crt-icon crt-icon-dots-three-horizontal")
-
-                                        Button {
-                                            Span().class("crt-icon crt-icon-chevron-thin-down")
-                                        }.id("crt-nav-arrow").class("clear-btn")
-                                    }.id("crt-nav-tools").class("hidden")
-                                }.class("crt-nav-cont")
-                                Div().class("crt-nav-btm")
-                            }.id("crt-nav-inner")
-                        }.id("crt-nav-wrap").class("hidden-sm hidden-xs")
-
                         Div {
                             Div {
                                 Div {
@@ -277,11 +232,11 @@ struct IndexHTML {
                                 }.id("crt-main-nav")
                             }.class("crt-nav-container crt-container hidden-sm hidden-xs")
                         }.id("crt-head-col2").class("crt-head-col text-right")
-                        Div {
-                            Button {
-                                Span { }.class("crt-icon crt-icon-side-bar-icon")
-                            }.id("crt-sidebar-btn").class("btn btn-icon btn-shade")
-                        }.id("crt-head-col3").class("crt-head-col text-right")
+//                        Div {
+//                            Button {
+//                                Span { }.class("crt-icon crt-icon-side-bar-icon")
+//                            }.id("crt-sidebar-btn").class("btn btn-icon btn-shade")
+//                        }.id("crt-head-col3").class("crt-head-col text-right")
                     }.class("crt-head-row")
                 }.class("crt-container-sm")
             }.class("crt-head-inner crt-container")
