@@ -40,7 +40,18 @@ struct IndexHTML {
                 .script(#"window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.4.min.js"><\/script>')"#),
                 .script(.src("https://maps.googleapis.com/maps/api/js")),
                 .script(.src("js/plugins.min.js")),
-                .script(.src("js/theme.min.js"))
+                .script(.src("js/theme.min.js")),
+                .script("""
+                    $('a[href*=\\#]').on('click', function(event){
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+                    });
+
+                    // Smooth scrolling when the document is loaded and ready
+                    $(document).ready(function(){
+                      $('html,body').animate({scrollTop:$(location.hash).offset().‌​top}, 500);
+                    });
+                """)
             ),
             .body {
                 Header {
@@ -52,13 +63,13 @@ struct IndexHTML {
                                         Navigation {
                                             List {
                                                 ListItem {
-                                                    Link("Home", url: "index.html")
+                                                    Link("Home", url: "#")
                                                 }
                                                 ListItem {
-                                                    Link("Portfolio", url: "portfolio.html")
+                                                    Link("Portfolio", url: "#portfolio")
                                                 }
                                                 ListItem {
-                                                    Link("Contact", url: "contact.html")
+                                                    Link("Contact", url: "#contact")
                                                 }
                                             }.class("clear-list")
                                         }.id("crt-main-nav")
@@ -76,28 +87,28 @@ struct IndexHTML {
                 Navigation {
                     List {
                         ListItem {
-                            Link(url: "index.html") {
+                            Link(url: "#about") {
                                 Image(url: "images/uploads/avatar/avatar-58x58-default.png", description: "Avatar picture")
                                     .class("avatar avatar-42")
-                            }.attribute(named: "data-tooltip", value: "Home")
+                            }.attribute(named: "data-tooltip", value: "About")
                         }
                         ListItem {
-                            Link(url: "experience.html") {
+                            Link(url: "#experience") {
                                 Span { }.class("crt-icon crt-icon-experience")
                             }.attribute(named: "data-tooltip", value: "Experience")
                         }
                         ListItem {
-                            Link(url: "portfolio.html") {
+                            Link(url: "#portfolio") {
                                 Span { }.class("crt-icon crt-icon-portfolio")
                             }.attribute(named: "data-tooltip", value: "Portfolio")
                         }
                         ListItem {
-                            Link(url: "testimonials.html") {
+                            Link(url: "#testimonials") {
                                 Span { }.class("crt-icon crt-icon-references")
                             }.attribute(named: "data-tooltip", value: "References")
                         }
                         ListItem {
-                            Link(url: "contact.html") {
+                            Link(url: "#contact") {
                                 Span { }.class("crt-icon crt-icon-contact")
                             }.attribute(named: "data-tooltip", value: "Contact")
                         }
@@ -149,22 +160,30 @@ struct IndexHTML {
                                         Navigation {
                                             List {
                                                 ListItem {
-                                                    Link(url: "experience.html") {
+                                                    Link(url: "#about") {
+                                                        Image("images/uploads/avatar/avatar-58x58-default.png")
+                                                            .class("avatar avatar-58")
+                                                            .attribute(named: "width", value: "58")
+                                                            .attribute(named: "height", value: "58")
+                                                    }.attribute(named: "data-tooltip", value: "About")
+                                                }
+                                                ListItem {
+                                                    Link(url: "#experience") {
                                                         Span().class("crt-icon crt-icon-experience")
                                                     }.attribute(named: "data-tooltip", value: "Experience")
                                                 }
                                                 ListItem {
-                                                    Link(url: "portfolio.html") {
+                                                    Link(url: "#portfolio") {
                                                         Span().class("crt-icon crt-icon-portfolio")
                                                     }.attribute(named: "data-tooltip", value: "Portfolio")
                                                 }
                                                 ListItem {
-                                                    Link(url: "testimonials.html") {
+                                                    Link(url: "#testimonials") {
                                                         Span().class("crt-icon crt-icon-references")
                                                     }.attribute(named: "data-tooltip", value: "References")
                                                 }
                                                 ListItem {
-                                                    Link(url: "contact.html") {
+                                                    Link(url: "#contact") {
                                                         Span().class("crt-icon crt-icon-contact")
                                                     }.attribute(named: "data-tooltip", value: "Contact")
                                                 }
@@ -689,13 +708,6 @@ struct IndexHTML {
          </div>
          <!-- .crt-wrapper -->
 
-         <!-- Scripts -->
-         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-         <script type="text/javascript" src="assets/js/plugins.min.js"></script>
-         <script type="text/javascript" src="assets/js/theme.min.js"></script>
          </body>
          </html>
          */
@@ -703,6 +715,7 @@ struct IndexHTML {
 
     var aboutMe: Component {
         Div { // should be a section
+            Element(name: "a") { }.attribute(named: "name", value: "about")
             Div {
                 Div {
                     H2("About Me").class("title-lg text-upper")
@@ -725,6 +738,12 @@ struct IndexHTML {
 
                         Element(name: "dt") { Text("RESIDENCE") }.class("text-upper")
                         Element(name: "dd") { Text(context.site.content.residence) }
+
+                        Element(name: "dt") { Text("Years in the industry") }.class("text-upper")
+                        Element(name: "dd") { Text("\(context.site.content.yearsInIndustry)") }
+
+                        Element(name: "dt") { Text("Primary Skill") }.class("text-upper")
+                        Element(name: "dd") { Text(context.site.content.primarySkill) }
                     }.class("dl-horizontal clear-mrg")
                 }.class("col-sm-6 clear-mrg")
 
@@ -734,6 +753,8 @@ struct IndexHTML {
                     ProficiencySlider(name: "iOS SDK", currentLevel: 8).html
                     ProficiencySlider(name: "Server Side Swift", currentLevel: 7).html
                     ProficiencySlider(name: "macOS/watchOS/tvOS SDK", currentLevel: 6).html
+                    ProficiencySlider(name: "C#/.NET", currentLevel: 7).html
+                    ProficiencySlider(name: "Scripting Languages (Ruby, Bash, etc...)", currentLevel: 5).html
                 }.class("col-sm-6 clear-mrg")
             }.class("row")
         }.class("section brd-btm padd-box")
