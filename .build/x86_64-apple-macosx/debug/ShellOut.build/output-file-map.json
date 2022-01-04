@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/ShellOut.build/master.swiftdeps"
+  },
+  "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/checkouts/shellout/Sources/ShellOut.swift": {
+    "dependencies": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/ShellOut.build/ShellOut.d",
+    "object": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/ShellOut.build/ShellOut.swift.o",
+    "swiftmodule": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/ShellOut.build/ShellOut~partial.swiftmodule",
+    "swift-dependencies": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/ShellOut.build/ShellOut.swiftdeps"
+  }
+}

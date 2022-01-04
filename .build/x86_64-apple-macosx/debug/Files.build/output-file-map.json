@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/Files.build/master.swiftdeps"
+  },
+  "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/checkouts/files/Sources/Files.swift": {
+    "dependencies": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/Files.build/Files.d",
+    "object": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/Files.build/Files.swift.o",
+    "swiftmodule": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/Files.build/Files~partial.swiftmodule",
+    "swift-dependencies": "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/Files.build/Files.swiftdeps"
+  }
+}

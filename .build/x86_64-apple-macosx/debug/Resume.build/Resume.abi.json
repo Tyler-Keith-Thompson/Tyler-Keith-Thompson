@@ -1,0 +1,1082 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "Plot",
+      "printedName": "Plot",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "Publish",
+      "printedName": "Publish",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "Plot",
+      "printedName": "Plot",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "Publish",
+      "printedName": "Publish",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "Resume"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Resume",
+      "printedName": "Resume",
+      "children": [
+        {
+          "kind": "TypeDecl",
+          "name": "SectionID",
+          "printedName": "SectionID",
+          "children": [
+            {
+              "kind": "Var",
+              "name": "posts",
+              "printedName": "posts",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(Resume.Resume.SectionID.Type) -> Resume.Resume.SectionID",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SectionID",
+                      "printedName": "Resume.Resume.SectionID",
+                      "usr": "s:6ResumeAAV9SectionIDO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "Resume.Resume.SectionID.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SectionID",
+                          "printedName": "Resume.Resume.SectionID",
+                          "usr": "s:6ResumeAAV9SectionIDO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:6ResumeAAV9SectionIDO5postsyA2DmF",
+              "mangledName": "$s6ResumeAAV9SectionIDO5postsyA2DmF",
+              "moduleName": "Resume",
+              "fixedbinaryorder": 0
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init(rawValue:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Resume.Resume.SectionID?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SectionID",
+                      "printedName": "Resume.Resume.SectionID",
+                      "usr": "s:6ResumeAAV9SectionIDO"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:6ResumeAAV9SectionIDO8rawValueADSgSS_tcfc",
+              "mangledName": "$s6ResumeAAV9SectionIDO8rawValueADSgSS_tcfc",
+              "moduleName": "Resume",
+              "implicit": true,
+              "init_kind": "Designated"
+            },
+            {
+              "kind": "Var",
+              "name": "allCases",
+              "printedName": "allCases",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Resume.Resume.SectionID]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SectionID",
+                      "printedName": "Resume.Resume.SectionID",
+                      "usr": "s:6ResumeAAV9SectionIDO"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:6ResumeAAV9SectionIDO8allCasesSayADGvpZ",
+              "mangledName": "$s6ResumeAAV9SectionIDO8allCasesSayADGvpZ",
+              "moduleName": "Resume",
+              "static": true,
+              "implicit": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[Resume.Resume.SectionID]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SectionID",
+                          "printedName": "Resume.Resume.SectionID",
+                          "usr": "s:6ResumeAAV9SectionIDO"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:6ResumeAAV9SectionIDO8allCasesSayADGvgZ",
+                  "mangledName": "$s6ResumeAAV9SectionIDO8allCasesSayADGvgZ",
+                  "moduleName": "Resume",
+                  "static": true,
+                  "implicit": true,
+                  "accessorKind": "get"
+                }
+              ]
+            },
+            {
+              "kind": "Var",
+              "name": "rawValue",
+              "printedName": "rawValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:6ResumeAAV9SectionIDO8rawValueSSvp",
+              "mangledName": "$s6ResumeAAV9SectionIDO8rawValueSSvp",
+              "moduleName": "Resume",
+              "implicit": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:6ResumeAAV9SectionIDO8rawValueSSvg",
+                  "mangledName": "$s6ResumeAAV9SectionIDO8rawValueSSvg",
+                  "moduleName": "Resume",
+                  "implicit": true,
+                  "accessorKind": "get"
+                }
+              ]
+            }
+          ],
+          "declKind": "Enum",
+          "usr": "s:6ResumeAAV9SectionIDO",
+          "mangledName": "$s6ResumeAAV9SectionIDO",
+          "moduleName": "Resume",
+          "enumRawTypeName": "String",
+          "isEnumExhaustive": true,
+          "conformances": [
+            {
+              "kind": "Conformance",
+              "name": "RawRepresentable",
+              "printedName": "RawRepresentable",
+              "children": [
+                {
+                  "kind": "TypeWitness",
+                  "name": "RawValue",
+                  "printedName": "RawValue",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:SY",
+              "mangledName": "$sSY"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Hashable",
+              "printedName": "Hashable",
+              "usr": "s:SH",
+              "mangledName": "$sSH"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Decodable",
+              "printedName": "Decodable",
+              "usr": "s:Se",
+              "mangledName": "$sSe"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Equatable",
+              "printedName": "Equatable",
+              "usr": "s:SQ",
+              "mangledName": "$sSQ"
+            },
+            {
+              "kind": "Conformance",
+              "name": "CaseIterable",
+              "printedName": "CaseIterable",
+              "children": [
+                {
+                  "kind": "TypeWitness",
+                  "name": "AllCases",
+                  "printedName": "AllCases",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[Resume.Resume.SectionID]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SectionID",
+                          "printedName": "Resume.Resume.SectionID",
+                          "usr": "s:6ResumeAAV9SectionIDO"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:s12CaseIterableP",
+              "mangledName": "$ss12CaseIterableP"
+            },
+            {
+              "kind": "Conformance",
+              "name": "WebsiteSectionID",
+              "printedName": "WebsiteSectionID",
+              "usr": "s:7Publish16WebsiteSectionIDP",
+              "mangledName": "$s7Publish16WebsiteSectionIDP"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Sendable",
+              "printedName": "Sendable",
+              "usr": "s:s8SendableP",
+              "mangledName": "$ss8SendableP"
+            }
+          ]
+        },
+        {
+          "kind": "TypeDecl",
+          "name": "ItemMetadata",
+          "printedName": "ItemMetadata",
+          "children": [
+            {
+              "kind": "Function",
+              "name": "hash",
+              "printedName": "hash(into:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Hasher",
+                  "printedName": "Swift.Hasher",
+                  "paramValueOwnership": "InOut",
+                  "usr": "s:s6HasherV"
+                }
+              ],
+              "declKind": "Func",
+              "usr": "s:6ResumeAAV12ItemMetadataV4hash4intoys6HasherVz_tF",
+              "mangledName": "$s6ResumeAAV12ItemMetadataV4hash4intoys6HasherVz_tF",
+              "moduleName": "Resume",
+              "implicit": true,
+              "funcSelfKind": "NonMutating"
+            },
+            {
+              "kind": "Function",
+              "name": "__derived_struct_equals",
+              "printedName": "__derived_struct_equals(_:_:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ItemMetadata",
+                  "printedName": "Resume.Resume.ItemMetadata",
+                  "usr": "s:6ResumeAAV12ItemMetadataV"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ItemMetadata",
+                  "printedName": "Resume.Resume.ItemMetadata",
+                  "usr": "s:6ResumeAAV12ItemMetadataV"
+                }
+              ],
+              "declKind": "Func",
+              "usr": "s:6ResumeAAV12ItemMetadataV23__derived_struct_equalsySbAD_ADtFZ",
+              "mangledName": "$s6ResumeAAV12ItemMetadataV23__derived_struct_equalsySbAD_ADtFZ",
+              "moduleName": "Resume",
+              "static": true,
+              "implicit": true,
+              "funcSelfKind": "NonMutating"
+            },
+            {
+              "kind": "Var",
+              "name": "hashValue",
+              "printedName": "hashValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:6ResumeAAV12ItemMetadataV9hashValueSivp",
+              "mangledName": "$s6ResumeAAV12ItemMetadataV9hashValueSivp",
+              "moduleName": "Resume",
+              "implicit": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:6ResumeAAV12ItemMetadataV9hashValueSivg",
+                  "mangledName": "$s6ResumeAAV12ItemMetadataV9hashValueSivg",
+                  "moduleName": "Resume",
+                  "implicit": true,
+                  "accessorKind": "get"
+                }
+              ]
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ItemMetadata",
+                  "printedName": "Resume.Resume.ItemMetadata",
+                  "usr": "s:6ResumeAAV12ItemMetadataV"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:6ResumeAAV12ItemMetadataVADycfc",
+              "mangledName": "$s6ResumeAAV12ItemMetadataVADycfc",
+              "moduleName": "Resume",
+              "implicit": true,
+              "init_kind": "Designated"
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init(from:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ItemMetadata",
+                  "printedName": "Resume.Resume.ItemMetadata",
+                  "usr": "s:6ResumeAAV12ItemMetadataV"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Decoder",
+                  "printedName": "Swift.Decoder",
+                  "usr": "s:s7DecoderP"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:6ResumeAAV12ItemMetadataV4fromADs7Decoder_p_tKcfc",
+              "mangledName": "$s6ResumeAAV12ItemMetadataV4fromADs7Decoder_p_tKcfc",
+              "moduleName": "Resume",
+              "implicit": true,
+              "throwing": true,
+              "init_kind": "Designated"
+            }
+          ],
+          "declKind": "Struct",
+          "usr": "s:6ResumeAAV12ItemMetadataV",
+          "mangledName": "$s6ResumeAAV12ItemMetadataV",
+          "moduleName": "Resume",
+          "conformances": [
+            {
+              "kind": "Conformance",
+              "name": "Hashable",
+              "printedName": "Hashable",
+              "usr": "s:SH",
+              "mangledName": "$sSH"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Equatable",
+              "printedName": "Equatable",
+              "usr": "s:SQ",
+              "mangledName": "$sSQ"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Decodable",
+              "printedName": "Decodable",
+              "usr": "s:Se",
+              "mangledName": "$sSe"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Sendable",
+              "printedName": "Sendable",
+              "usr": "s:s8SendableP",
+              "mangledName": "$ss8SendableP"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "url",
+          "printedName": "url",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "URL",
+              "printedName": "Foundation.URL",
+              "usr": "s:10Foundation3URLV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6ResumeAAV3url10Foundation3URLVvp",
+          "mangledName": "$s6ResumeAAV3url10Foundation3URLVvp",
+          "moduleName": "Resume",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "URL",
+                  "printedName": "Foundation.URL",
+                  "usr": "s:10Foundation3URLV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV3url10Foundation3URLVvg",
+              "mangledName": "$s6ResumeAAV3url10Foundation3URLVvg",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "URL",
+                  "printedName": "Foundation.URL",
+                  "usr": "s:10Foundation3URLV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV3url10Foundation3URLVvs",
+              "mangledName": "$s6ResumeAAV3url10Foundation3URLVvs",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV3url10Foundation3URLVvM",
+              "mangledName": "$s6ResumeAAV3url10Foundation3URLVvM",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "name",
+          "printedName": "name",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6ResumeAAV4nameSSvp",
+          "mangledName": "$s6ResumeAAV4nameSSvp",
+          "moduleName": "Resume",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV4nameSSvg",
+              "mangledName": "$s6ResumeAAV4nameSSvg",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV4nameSSvs",
+              "mangledName": "$s6ResumeAAV4nameSSvs",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV4nameSSvM",
+              "mangledName": "$s6ResumeAAV4nameSSvM",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "description",
+          "printedName": "description",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6ResumeAAV11descriptionSSvp",
+          "mangledName": "$s6ResumeAAV11descriptionSSvp",
+          "moduleName": "Resume",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV11descriptionSSvg",
+              "mangledName": "$s6ResumeAAV11descriptionSSvg",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV11descriptionSSvs",
+              "mangledName": "$s6ResumeAAV11descriptionSSvs",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV11descriptionSSvM",
+              "mangledName": "$s6ResumeAAV11descriptionSSvM",
+              "moduleName": "Resume",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "language",
+          "printedName": "language",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Language",
+              "printedName": "Plot.Language",
+              "usr": "s:4Plot8LanguageO"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6ResumeAAV8language4Plot8LanguageOvp",
+          "mangledName": "$s6ResumeAAV8language4Plot8LanguageOvp",
+          "moduleName": "Resume",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Language",
+                  "printedName": "Plot.Language",
+                  "usr": "s:4Plot8LanguageO"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV8language4Plot8LanguageOvg",
+              "mangledName": "$s6ResumeAAV8language4Plot8LanguageOvg",
+              "moduleName": "Resume",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "imagePath",
+          "printedName": "imagePath",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Publish.Path?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Path",
+                  "printedName": "Publish.Path",
+                  "usr": "s:7Publish4PathV"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:6ResumeAAV9imagePath7Publish0C0VSgvp",
+          "mangledName": "$s6ResumeAAV9imagePath7Publish0C0VSgvp",
+          "moduleName": "Resume",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Publish.Path?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Path",
+                      "printedName": "Publish.Path",
+                      "usr": "s:7Publish4PathV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:6ResumeAAV9imagePath7Publish0C0VSgvg",
+              "mangledName": "$s6ResumeAAV9imagePath7Publish0C0VSgvg",
+              "moduleName": "Resume",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Resume",
+              "printedName": "Resume.Resume",
+              "usr": "s:6ResumeAAV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6ResumeAAVABycfc",
+          "mangledName": "$s6ResumeAAVABycfc",
+          "moduleName": "Resume",
+          "implicit": true,
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(url:name:description:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Resume",
+              "printedName": "Resume.Resume",
+              "usr": "s:6ResumeAAV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URL",
+              "printedName": "Foundation.URL",
+              "hasDefaultArg": true,
+              "usr": "s:10Foundation3URLV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "hasDefaultArg": true,
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "hasDefaultArg": true,
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:6ResumeAAV3url4name11descriptionAB10Foundation3URLV_S2Stcfc",
+          "mangledName": "$s6ResumeAAV3url4name11descriptionAB10Foundation3URLV_S2Stcfc",
+          "moduleName": "Resume",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:6ResumeAAV",
+      "mangledName": "$s6ResumeAAV",
+      "moduleName": "Resume",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Website",
+          "printedName": "Website",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "SectionID",
+              "printedName": "SectionID",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SectionID",
+                  "printedName": "Resume.Resume.SectionID",
+                  "usr": "s:6ResumeAAV9SectionIDO"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "ItemMetadata",
+              "printedName": "ItemMetadata",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ItemMetadata",
+                  "printedName": "Resume.Resume.ItemMetadata",
+                  "usr": "s:6ResumeAAV12ItemMetadataV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Publish7WebsiteP",
+          "mangledName": "$s7Publish7WebsiteP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Theme",
+      "printedName": "Theme",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "resume",
+          "printedName": "resume",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Theme",
+              "printedName": "Publish.Theme<Resume.Resume>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Resume",
+                  "printedName": "Resume.Resume",
+                  "usr": "s:6ResumeAAV"
+                }
+              ],
+              "usr": "s:7Publish5ThemeV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:7Publish5ThemeV6ResumeA2DVRszrlE6resumeACyAEGvpZ",
+          "mangledName": "$s7Publish5ThemeV6ResumeA2DVRszrlE6resumeACyAEGvpZ",
+          "moduleName": "Resume",
+          "static": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Theme",
+                  "printedName": "Publish.Theme<Resume.Resume>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Resume",
+                      "printedName": "Resume.Resume",
+                      "usr": "s:6ResumeAAV"
+                    }
+                  ],
+                  "usr": "s:7Publish5ThemeV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:7Publish5ThemeV6ResumeA2DVRszrlE6resumeACyAEGvgZ",
+              "mangledName": "$s7Publish5ThemeV6ResumeA2DVRszrlE6resumeACyAEGvgZ",
+              "moduleName": "Resume",
+              "genericSig": "<τ_0_0 where τ_0_0 == Resume.Resume>",
+              "sugared_genericSig": "<Site where Site == Resume.Resume>",
+              "static": true,
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:7Publish5ThemeV",
+      "mangledName": "$s7Publish5ThemeV",
+      "moduleName": "Publish",
+      "genericSig": "<τ_0_0 where τ_0_0 : Publish.Website>",
+      "sugared_genericSig": "<Site where Site : Publish.Website>",
+      "isExternal": true
+    }
+  ],
+  "json_format_version": 6
+}

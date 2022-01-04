@@ -1,0 +1,4 @@
+module Publish {
+    header "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/x86_64-apple-macosx/debug/Publish.build/Publish-Swift.h"
+    requires objc
+}

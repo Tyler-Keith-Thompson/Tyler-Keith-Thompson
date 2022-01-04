@@ -1,0 +1,1939 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Dispatch",
+      "printedName": "Dispatch",
+      "declKind": "Import",
+      "moduleName": "ShellOut"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "ShellOut"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "ShellOut"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "ShellOut"
+    },
+    {
+      "kind": "Function",
+      "name": "shellOut",
+      "printedName": "shellOut(to:arguments:at:process:outputHandle:errorHandle:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[Swift.String]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sa"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "hasDefaultArg": true,
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Process",
+          "printedName": "Foundation.Process",
+          "hasDefaultArg": true,
+          "usr": "c:objc(cs)NSTask"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.FileHandle?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileHandle",
+              "printedName": "Foundation.FileHandle",
+              "usr": "c:objc(cs)NSFileHandle"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.FileHandle?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileHandle",
+              "printedName": "Foundation.FileHandle",
+              "usr": "c:objc(cs)NSFileHandle"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:8ShellOut05shellB02to9arguments2at7process12outputHandle05errorI0S2S_SaySSGSSSo6NSTaskCSo06NSFileI0CSgANtKF",
+      "mangledName": "$s8ShellOut05shellB02to9arguments2at7process12outputHandle05errorI0S2S_SaySSGSSSo6NSTaskCSo06NSFileI0CSgANtKF",
+      "moduleName": "ShellOut",
+      "declAttributes": [
+        "DiscardableResult"
+      ],
+      "throwing": true,
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "shellOut",
+      "printedName": "shellOut(to:at:process:outputHandle:errorHandle:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Array",
+          "printedName": "[Swift.String]",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "usr": "s:Sa"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "hasDefaultArg": true,
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Process",
+          "printedName": "Foundation.Process",
+          "hasDefaultArg": true,
+          "usr": "c:objc(cs)NSTask"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.FileHandle?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileHandle",
+              "printedName": "Foundation.FileHandle",
+              "usr": "c:objc(cs)NSFileHandle"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.FileHandle?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileHandle",
+              "printedName": "Foundation.FileHandle",
+              "usr": "c:objc(cs)NSFileHandle"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:8ShellOut05shellB02to2at7process12outputHandle05errorH0SSSaySSG_SSSo6NSTaskCSo06NSFileH0CSgAMtKF",
+      "mangledName": "$s8ShellOut05shellB02to2at7process12outputHandle05errorH0SSSaySSG_SSSo6NSTaskCSo06NSFileH0CSgAMtKF",
+      "moduleName": "ShellOut",
+      "declAttributes": [
+        "DiscardableResult"
+      ],
+      "throwing": true,
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "shellOut",
+      "printedName": "shellOut(to:at:process:outputHandle:errorHandle:)",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "ShellOutCommand",
+          "printedName": "ShellOut.ShellOutCommand",
+          "usr": "s:8ShellOut0aB7CommandV"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "String",
+          "printedName": "Swift.String",
+          "hasDefaultArg": true,
+          "usr": "s:SS"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Process",
+          "printedName": "Foundation.Process",
+          "hasDefaultArg": true,
+          "usr": "c:objc(cs)NSTask"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.FileHandle?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileHandle",
+              "printedName": "Foundation.FileHandle",
+              "usr": "c:objc(cs)NSFileHandle"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sq"
+        },
+        {
+          "kind": "TypeNominal",
+          "name": "Optional",
+          "printedName": "Foundation.FileHandle?",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileHandle",
+              "printedName": "Foundation.FileHandle",
+              "usr": "c:objc(cs)NSFileHandle"
+            }
+          ],
+          "hasDefaultArg": true,
+          "usr": "s:Sq"
+        }
+      ],
+      "declKind": "Func",
+      "usr": "s:8ShellOut05shellB02to2at7process12outputHandle05errorH0SSAA0aB7CommandV_SSSo6NSTaskCSo06NSFileH0CSgANtKF",
+      "mangledName": "$s8ShellOut05shellB02to2at7process12outputHandle05errorH0SSAA0aB7CommandV_SSSo6NSTaskCSo06NSFileH0CSgANtKF",
+      "moduleName": "ShellOut",
+      "declAttributes": [
+        "DiscardableResult"
+      ],
+      "throwing": true,
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ShellOutCommand",
+      "printedName": "ShellOutCommand",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "string",
+          "printedName": "string",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB7CommandV6stringSSvp",
+          "mangledName": "$s8ShellOut0aB7CommandV6stringSSvp",
+          "moduleName": "ShellOut",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB7CommandV6stringSSvg",
+              "mangledName": "$s8ShellOut0aB7CommandV6stringSSvg",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB7CommandV6stringSSvs",
+              "mangledName": "$s8ShellOut0aB7CommandV6stringSSvs",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB7CommandV6stringSSvM",
+              "mangledName": "$s8ShellOut0aB7CommandV6stringSSvM",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(string:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:8ShellOut0aB7CommandV6stringACSS_tcfc",
+          "mangledName": "$s8ShellOut0aB7CommandV6stringACSS_tcfc",
+          "moduleName": "ShellOut",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "TypeDecl",
+          "name": "SwiftPackageType",
+          "printedName": "SwiftPackageType",
+          "children": [
+            {
+              "kind": "Var",
+              "name": "library",
+              "printedName": "library",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(ShellOut.ShellOutCommand.SwiftPackageType.Type) -> ShellOut.ShellOutCommand.SwiftPackageType",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SwiftPackageType",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftPackageType",
+                      "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftPackageType.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SwiftPackageType",
+                          "printedName": "ShellOut.ShellOutCommand.SwiftPackageType",
+                          "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO7libraryyA2EmF",
+              "mangledName": "$s8ShellOut0aB7CommandV16SwiftPackageTypeO7libraryyA2EmF",
+              "moduleName": "ShellOut",
+              "fixedbinaryorder": 0
+            },
+            {
+              "kind": "Var",
+              "name": "executable",
+              "printedName": "executable",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(ShellOut.ShellOutCommand.SwiftPackageType.Type) -> ShellOut.ShellOutCommand.SwiftPackageType",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SwiftPackageType",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftPackageType",
+                      "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftPackageType.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SwiftPackageType",
+                          "printedName": "ShellOut.ShellOutCommand.SwiftPackageType",
+                          "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO10executableyA2EmF",
+              "mangledName": "$s8ShellOut0aB7CommandV16SwiftPackageTypeO10executableyA2EmF",
+              "moduleName": "ShellOut",
+              "fixedbinaryorder": 1
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init(rawValue:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "ShellOut.ShellOutCommand.SwiftPackageType?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SwiftPackageType",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftPackageType",
+                      "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO8rawValueAESgSS_tcfc",
+              "mangledName": "$s8ShellOut0aB7CommandV16SwiftPackageTypeO8rawValueAESgSS_tcfc",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Inlinable"
+              ],
+              "init_kind": "Designated"
+            },
+            {
+              "kind": "Var",
+              "name": "rawValue",
+              "printedName": "rawValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO8rawValueSSvp",
+              "mangledName": "$s8ShellOut0aB7CommandV16SwiftPackageTypeO8rawValueSSvp",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO8rawValueSSvg",
+                  "mangledName": "$s8ShellOut0aB7CommandV16SwiftPackageTypeO8rawValueSSvg",
+                  "moduleName": "ShellOut",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Inlinable"
+                  ],
+                  "accessorKind": "get"
+                }
+              ]
+            }
+          ],
+          "declKind": "Enum",
+          "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO",
+          "mangledName": "$s8ShellOut0aB7CommandV16SwiftPackageTypeO",
+          "moduleName": "ShellOut",
+          "enumRawTypeName": "String",
+          "isEnumExhaustive": true,
+          "conformances": [
+            {
+              "kind": "Conformance",
+              "name": "Hashable",
+              "printedName": "Hashable",
+              "usr": "s:SH",
+              "mangledName": "$sSH"
+            },
+            {
+              "kind": "Conformance",
+              "name": "RawRepresentable",
+              "printedName": "RawRepresentable",
+              "children": [
+                {
+                  "kind": "TypeWitness",
+                  "name": "RawValue",
+                  "printedName": "RawValue",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:SY",
+              "mangledName": "$sSY"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Equatable",
+              "printedName": "Equatable",
+              "usr": "s:SQ",
+              "mangledName": "$sSQ"
+            }
+          ]
+        },
+        {
+          "kind": "TypeDecl",
+          "name": "SwiftBuildConfiguration",
+          "printedName": "SwiftBuildConfiguration",
+          "children": [
+            {
+              "kind": "Var",
+              "name": "debug",
+              "printedName": "debug",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(ShellOut.ShellOutCommand.SwiftBuildConfiguration.Type) -> ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SwiftBuildConfiguration",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+                      "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SwiftBuildConfiguration",
+                          "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+                          "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO5debugyA2EmF",
+              "mangledName": "$s8ShellOut0aB7CommandV23SwiftBuildConfigurationO5debugyA2EmF",
+              "moduleName": "ShellOut",
+              "fixedbinaryorder": 0
+            },
+            {
+              "kind": "Var",
+              "name": "release",
+              "printedName": "release",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(ShellOut.ShellOutCommand.SwiftBuildConfiguration.Type) -> ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SwiftBuildConfiguration",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+                      "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "SwiftBuildConfiguration",
+                          "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+                          "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO7releaseyA2EmF",
+              "mangledName": "$s8ShellOut0aB7CommandV23SwiftBuildConfigurationO7releaseyA2EmF",
+              "moduleName": "ShellOut",
+              "fixedbinaryorder": 1
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init(rawValue:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "SwiftBuildConfiguration",
+                      "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+                      "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO8rawValueAESgSS_tcfc",
+              "mangledName": "$s8ShellOut0aB7CommandV23SwiftBuildConfigurationO8rawValueAESgSS_tcfc",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Inlinable"
+              ],
+              "init_kind": "Designated"
+            },
+            {
+              "kind": "Var",
+              "name": "rawValue",
+              "printedName": "rawValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO8rawValueSSvp",
+              "mangledName": "$s8ShellOut0aB7CommandV23SwiftBuildConfigurationO8rawValueSSvp",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO8rawValueSSvg",
+                  "mangledName": "$s8ShellOut0aB7CommandV23SwiftBuildConfigurationO8rawValueSSvg",
+                  "moduleName": "ShellOut",
+                  "implicit": true,
+                  "declAttributes": [
+                    "Inlinable"
+                  ],
+                  "accessorKind": "get"
+                }
+              ]
+            }
+          ],
+          "declKind": "Enum",
+          "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO",
+          "mangledName": "$s8ShellOut0aB7CommandV23SwiftBuildConfigurationO",
+          "moduleName": "ShellOut",
+          "enumRawTypeName": "String",
+          "isEnumExhaustive": true,
+          "conformances": [
+            {
+              "kind": "Conformance",
+              "name": "Hashable",
+              "printedName": "Hashable",
+              "usr": "s:SH",
+              "mangledName": "$sSH"
+            },
+            {
+              "kind": "Conformance",
+              "name": "RawRepresentable",
+              "printedName": "RawRepresentable",
+              "children": [
+                {
+                  "kind": "TypeWitness",
+                  "name": "RawValue",
+                  "printedName": "RawValue",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:SY",
+              "mangledName": "$sSY"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Equatable",
+              "printedName": "Equatable",
+              "usr": "s:SQ",
+              "mangledName": "$sSQ"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "createSwiftPackage",
+          "printedName": "createSwiftPackage(withType:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SwiftPackageType",
+              "printedName": "ShellOut.ShellOutCommand.SwiftPackageType",
+              "hasDefaultArg": true,
+              "usr": "s:8ShellOut0aB7CommandV16SwiftPackageTypeO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV18createSwiftPackage8withTypeA2C0efH0O_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV18createSwiftPackage8withTypeA2C0efH0O_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "updateSwiftPackages",
+          "printedName": "updateSwiftPackages()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV19updateSwiftPackagesACyFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV19updateSwiftPackagesACyFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "generateSwiftPackageXcodeProject",
+          "printedName": "generateSwiftPackageXcodeProject()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV32generateSwiftPackageXcodeProjectACyFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV32generateSwiftPackageXcodeProjectACyFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "buildSwiftPackage",
+          "printedName": "buildSwiftPackage(withConfiguration:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SwiftBuildConfiguration",
+              "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+              "hasDefaultArg": true,
+              "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV17buildSwiftPackage17withConfigurationA2C0e5BuildH0O_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV17buildSwiftPackage17withConfigurationA2C0e5BuildH0O_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "testSwiftPackage",
+          "printedName": "testSwiftPackage(withConfiguration:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SwiftBuildConfiguration",
+              "printedName": "ShellOut.ShellOutCommand.SwiftBuildConfiguration",
+              "hasDefaultArg": true,
+              "usr": "s:8ShellOut0aB7CommandV23SwiftBuildConfigurationO"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV16testSwiftPackage17withConfigurationA2C0e5BuildH0O_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV16testSwiftPackage17withConfigurationA2C0e5BuildH0O_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "gitInit",
+          "printedName": "gitInit()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV7gitInitACyFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV7gitInitACyFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "gitClone",
+          "printedName": "gitClone(url:to:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "URL",
+              "printedName": "Foundation.URL",
+              "usr": "s:10Foundation3URLV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV8gitClone3url2toAC10Foundation3URLV_SSSgtFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV8gitClone3url2toAC10Foundation3URLV_SSSgtFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "gitCommit",
+          "printedName": "gitCommit(message:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV9gitCommit7messageACSS_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV9gitCommit7messageACSS_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "gitPush",
+          "printedName": "gitPush(remote:branch:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV7gitPush6remote6branchACSSSg_AGtFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV7gitPush6remote6branchACSSSg_AGtFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "gitPull",
+          "printedName": "gitPull(remote:branch:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV7gitPull6remote6branchACSSSg_AGtFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV7gitPull6remote6branchACSSSg_AGtFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "gitSubmoduleUpdate",
+          "printedName": "gitSubmoduleUpdate(initializeIfNeeded:recursive:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "hasDefaultArg": true,
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "hasDefaultArg": true,
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV18gitSubmoduleUpdate18initializeIfNeeded9recursiveACSb_SbtFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV18gitSubmoduleUpdate18initializeIfNeeded9recursiveACSb_SbtFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "gitCheckout",
+          "printedName": "gitCheckout(branch:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV11gitCheckout6branchACSS_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV11gitCheckout6branchACSS_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "createFolder",
+          "printedName": "createFolder(named:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV12createFolder5namedACSS_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV12createFolder5namedACSS_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "createFile",
+          "printedName": "createFile(named:contents:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV10createFile5named8contentsACSS_SStFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV10createFile5named8contentsACSS_SStFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "moveFile",
+          "printedName": "moveFile(from:to:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV8moveFile4from2toACSS_SStFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV8moveFile4from2toACSS_SStFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "copyFile",
+          "printedName": "copyFile(from:to:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV8copyFile4from2toACSS_SStFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV8copyFile4from2toACSS_SStFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "removeFile",
+          "printedName": "removeFile(from:arguments:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV10removeFile4from9argumentsACSS_SaySSGtFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV10removeFile4from9argumentsACSS_SaySSGtFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "openFile",
+          "printedName": "openFile(at:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV8openFile2atACSS_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV8openFile2atACSS_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "readFile",
+          "printedName": "readFile(at:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV8readFile2atACSS_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV8readFile2atACSS_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "createSymlink",
+          "printedName": "createSymlink(to:at:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV13createSymlink2to2atACSS_SStFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV13createSymlink2to2atACSS_SStFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "expandSymlink",
+          "printedName": "expandSymlink(at:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV13expandSymlink2atACSS_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV13expandSymlink2atACSS_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "runMarathonScript",
+          "printedName": "runMarathonScript(at:arguments:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV17runMarathonScript2at9argumentsACSS_SaySSGtFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV17runMarathonScript2at9argumentsACSS_SaySSGtFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "updateMarathonPackages",
+          "printedName": "updateMarathonPackages()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV22updateMarathonPackagesACyFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV22updateMarathonPackagesACyFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "runFastlane",
+          "printedName": "runFastlane(usingLane:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV11runFastlane9usingLaneACSS_tFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV11runFastlane9usingLaneACSS_tFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "updateCocoaPods",
+          "printedName": "updateCocoaPods()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV15updateCocoaPodsACyFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV15updateCocoaPodsACyFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "installCocoaPods",
+          "printedName": "installCocoaPods()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutCommand",
+              "printedName": "ShellOut.ShellOutCommand",
+              "usr": "s:8ShellOut0aB7CommandV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:8ShellOut0aB7CommandV16installCocoaPodsACyFZ",
+          "mangledName": "$s8ShellOut0aB7CommandV16installCocoaPodsACyFZ",
+          "moduleName": "ShellOut",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:8ShellOut0aB7CommandV",
+      "mangledName": "$s8ShellOut0aB7CommandV",
+      "moduleName": "ShellOut"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ShellOutError",
+      "printedName": "ShellOutError",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "terminationStatus",
+          "printedName": "terminationStatus",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB5ErrorV17terminationStatuss5Int32Vvp",
+          "mangledName": "$s8ShellOut0aB5ErrorV17terminationStatuss5Int32Vvp",
+          "moduleName": "ShellOut",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int32",
+                  "printedName": "Swift.Int32",
+                  "usr": "s:s5Int32V"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB5ErrorV17terminationStatuss5Int32Vvg",
+              "mangledName": "$s8ShellOut0aB5ErrorV17terminationStatuss5Int32Vvg",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "message",
+          "printedName": "message",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB5ErrorV7messageSSvp",
+          "mangledName": "$s8ShellOut0aB5ErrorV7messageSSvp",
+          "moduleName": "ShellOut",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB5ErrorV7messageSSvg",
+              "mangledName": "$s8ShellOut0aB5ErrorV7messageSSvg",
+              "moduleName": "ShellOut",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "errorData",
+          "printedName": "errorData",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Data",
+              "printedName": "Foundation.Data",
+              "usr": "s:10Foundation4DataV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB5ErrorV9errorData10Foundation0E0Vvp",
+          "mangledName": "$s8ShellOut0aB5ErrorV9errorData10Foundation0E0Vvp",
+          "moduleName": "ShellOut",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB5ErrorV9errorData10Foundation0E0Vvg",
+              "mangledName": "$s8ShellOut0aB5ErrorV9errorData10Foundation0E0Vvg",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "outputData",
+          "printedName": "outputData",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Data",
+              "printedName": "Foundation.Data",
+              "usr": "s:10Foundation4DataV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB5ErrorV10outputData10Foundation0E0Vvp",
+          "mangledName": "$s8ShellOut0aB5ErrorV10outputData10Foundation0E0Vvp",
+          "moduleName": "ShellOut",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB5ErrorV10outputData10Foundation0E0Vvg",
+              "mangledName": "$s8ShellOut0aB5ErrorV10outputData10Foundation0E0Vvg",
+              "moduleName": "ShellOut",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "output",
+          "printedName": "output",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB5ErrorV6outputSSvp",
+          "mangledName": "$s8ShellOut0aB5ErrorV6outputSSvp",
+          "moduleName": "ShellOut",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB5ErrorV6outputSSvg",
+              "mangledName": "$s8ShellOut0aB5ErrorV6outputSSvg",
+              "moduleName": "ShellOut",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(terminationStatus:errorData:outputData:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ShellOutError",
+              "printedName": "ShellOut.ShellOutError",
+              "usr": "s:8ShellOut0aB5ErrorV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Data",
+              "printedName": "Foundation.Data",
+              "usr": "s:10Foundation4DataV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Data",
+              "printedName": "Foundation.Data",
+              "usr": "s:10Foundation4DataV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:8ShellOut0aB5ErrorV17terminationStatus9errorData06outputG0ACs5Int32V_10Foundation0G0VAKtcfc",
+          "mangledName": "$s8ShellOut0aB5ErrorV17terminationStatus9errorData06outputG0ACs5Int32V_10Foundation0G0VAKtcfc",
+          "moduleName": "ShellOut",
+          "implicit": true,
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Var",
+          "name": "description",
+          "printedName": "description",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB5ErrorV11descriptionSSvp",
+          "mangledName": "$s8ShellOut0aB5ErrorV11descriptionSSvp",
+          "moduleName": "ShellOut",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB5ErrorV11descriptionSSvg",
+              "mangledName": "$s8ShellOut0aB5ErrorV11descriptionSSvg",
+              "moduleName": "ShellOut",
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "errorDescription",
+          "printedName": "errorDescription",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:8ShellOut0aB5ErrorV16errorDescriptionSSSgvp",
+          "mangledName": "$s8ShellOut0aB5ErrorV16errorDescriptionSSSgvp",
+          "moduleName": "ShellOut",
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:8ShellOut0aB5ErrorV16errorDescriptionSSSgvg",
+              "mangledName": "$s8ShellOut0aB5ErrorV16errorDescriptionSSSgvg",
+              "moduleName": "ShellOut",
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:8ShellOut0aB5ErrorV",
+      "mangledName": "$s8ShellOut0aB5ErrorV",
+      "moduleName": "ShellOut",
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "LocalizedError",
+          "printedName": "LocalizedError",
+          "usr": "s:10Foundation14LocalizedErrorP",
+          "mangledName": "$s10Foundation14LocalizedErrorP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Error",
+          "printedName": "Error",
+          "usr": "s:s5ErrorP",
+          "mangledName": "$ss5ErrorP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

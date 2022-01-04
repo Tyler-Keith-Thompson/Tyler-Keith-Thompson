@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
+build_start_time: [1641269795, 94807147]
+build_end_time: [1641269795, 140675067]
+inputs:
+  "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/checkouts/files/Sources/Files.swift": [1641259595, 338569641]

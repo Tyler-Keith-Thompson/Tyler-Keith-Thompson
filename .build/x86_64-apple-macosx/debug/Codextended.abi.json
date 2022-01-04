@@ -1,0 +1,1530 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "Codextended"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "Codextended"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "Codextended"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AnyEncoder",
+      "printedName": "AnyEncoder",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "encode",
+          "printedName": "encode(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Data",
+              "printedName": "Foundation.Data",
+              "usr": "s:10Foundation4DataV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:11Codextended10AnyEncoderP6encodey10Foundation4DataVqd__KSERd__lF",
+          "mangledName": "$s11Codextended10AnyEncoderP6encodey10Foundation4DataVqd__KSERd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Codextended.AnyEncoder, τ_1_0 : Swift.Encodable>",
+          "sugared_genericSig": "<Self, T where Self : Codextended.AnyEncoder, T : Swift.Encodable>",
+          "protocolReq": true,
+          "throwing": true,
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:11Codextended10AnyEncoderP",
+      "mangledName": "$s11Codextended10AnyEncoderP",
+      "moduleName": "Codextended"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AnyDecoder",
+      "printedName": "AnyDecoder",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "decode",
+          "printedName": "decode(_:from:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Metatype",
+              "printedName": "τ_1_0.Type",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ]
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Data",
+              "printedName": "Foundation.Data",
+              "usr": "s:10Foundation4DataV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:11Codextended10AnyDecoderP6decode_4fromqd__qd__m_10Foundation4DataVtKSeRd__lF",
+          "mangledName": "$s11Codextended10AnyDecoderP6decode_4fromqd__qd__m_10Foundation4DataVtKSeRd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Codextended.AnyDecoder, τ_1_0 : Swift.Decodable>",
+          "sugared_genericSig": "<Self, T where Self : Codextended.AnyDecoder, T : Swift.Decodable>",
+          "protocolReq": true,
+          "throwing": true,
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:11Codextended10AnyDecoderP",
+      "mangledName": "$s11Codextended10AnyDecoderP",
+      "moduleName": "Codextended"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AnyDateFormatter",
+      "printedName": "AnyDateFormatter",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "date",
+          "printedName": "date(from:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Date?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Date",
+                  "printedName": "Foundation.Date",
+                  "usr": "s:10Foundation4DateV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:11Codextended16AnyDateFormatterP4date4from10Foundation0C0VSgSS_tF",
+          "mangledName": "$s11Codextended16AnyDateFormatterP4date4from10Foundation0C0VSgSS_tF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0 where τ_0_0 : Codextended.AnyDateFormatter>",
+          "sugared_genericSig": "<Self where Self : Codextended.AnyDateFormatter>",
+          "protocolReq": true,
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "string",
+          "printedName": "string(from:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:11Codextended16AnyDateFormatterP6string4fromSS10Foundation0C0V_tF",
+          "mangledName": "$s11Codextended16AnyDateFormatterP6string4fromSS10Foundation0C0V_tF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0 where τ_0_0 : Codextended.AnyDateFormatter>",
+          "sugared_genericSig": "<Self where Self : Codextended.AnyDateFormatter>",
+          "protocolReq": true,
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:11Codextended16AnyDateFormatterP",
+      "mangledName": "$s11Codextended16AnyDateFormatterP",
+      "moduleName": "Codextended"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "JSONEncoder",
+      "printedName": "JSONEncoder",
+      "declKind": "Class",
+      "usr": "s:10Foundation11JSONEncoderC",
+      "mangledName": "$s10Foundation11JSONEncoderC",
+      "moduleName": "Foundation",
+      "isOpen": true,
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "AnyEncoder",
+          "printedName": "AnyEncoder",
+          "usr": "s:11Codextended10AnyEncoderP",
+          "mangledName": "$s11Codextended10AnyEncoderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "TopLevelEncoder",
+          "printedName": "TopLevelEncoder",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine15TopLevelEncoderP",
+          "mangledName": "$s7Combine15TopLevelEncoderP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "PropertyListEncoder",
+      "printedName": "PropertyListEncoder",
+      "declKind": "Class",
+      "usr": "s:10Foundation19PropertyListEncoderC",
+      "mangledName": "$s10Foundation19PropertyListEncoderC",
+      "moduleName": "Foundation",
+      "isOpen": true,
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "AnyEncoder",
+          "printedName": "AnyEncoder",
+          "usr": "s:11Codextended10AnyEncoderP",
+          "mangledName": "$s11Codextended10AnyEncoderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "TopLevelEncoder",
+          "printedName": "TopLevelEncoder",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Output",
+              "printedName": "Output",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine15TopLevelEncoderP",
+          "mangledName": "$s7Combine15TopLevelEncoderP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Encodable",
+      "printedName": "Encodable",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "encoded",
+          "printedName": "encoded(using:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Data",
+              "printedName": "Foundation.Data",
+              "usr": "s:10Foundation4DataV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "AnyEncoder",
+              "printedName": "Codextended.AnyEncoder",
+              "hasDefaultArg": true,
+              "usr": "s:11Codextended10AnyEncoderP"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:SE11CodextendedE7encoded5using10Foundation4DataVAA10AnyEncoder_p_tKF",
+          "mangledName": "$sSE11CodextendedE7encoded5using10Foundation4DataVAA10AnyEncoder_p_tKF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
+          "sugared_genericSig": "<Self where Self : Swift.Encodable>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:SE",
+      "mangledName": "$sSE",
+      "moduleName": "Swift",
+      "isExternal": true
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Encoder",
+      "printedName": "Encoder",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "encodeSingleValue",
+          "printedName": "encodeSingleValue(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7EncoderP11CodextendedE17encodeSingleValueyyqd__KSERd__lF",
+          "mangledName": "$ss7EncoderP11CodextendedE17encodeSingleValueyyqd__KSERd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Encoder, τ_1_0 : Swift.Encodable>",
+          "sugared_genericSig": "<Self, T where Self : Swift.Encoder, T : Swift.Encodable>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "encode",
+          "printedName": "encode(_:for:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7EncoderP11CodextendedE6encode_3foryqd___SStKSERd__lF",
+          "mangledName": "$ss7EncoderP11CodextendedE6encode_3foryqd___SStKSERd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Encoder, τ_1_0 : Swift.Encodable>",
+          "sugared_genericSig": "<Self, T where Self : Swift.Encoder, T : Swift.Encodable>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "encode",
+          "printedName": "encode(_:for:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_1"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7EncoderP11CodextendedE6encode_3foryqd___qd_0_tKSERd__s9CodingKeyRd_0_r0_lF",
+          "mangledName": "$ss7EncoderP11CodextendedE6encode_3foryqd___qd_0_tKSERd__s9CodingKeyRd_0_r0_lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : Swift.Encoder, τ_1_0 : Swift.Encodable, τ_1_1 : Swift.CodingKey>",
+          "sugared_genericSig": "<Self, T, K where Self : Swift.Encoder, T : Swift.Encodable, K : Swift.CodingKey>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "encode",
+          "printedName": "encode(_:for:using:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7EncoderP11CodextendedE6encode_3for5usingy10Foundation4DateV_SSqd__tKAC03AnyG9FormatterRd__lF",
+          "mangledName": "$ss7EncoderP11CodextendedE6encode_3for5usingy10Foundation4DateV_SSqd__tKAC03AnyG9FormatterRd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Encoder, τ_1_0 : Codextended.AnyDateFormatter>",
+          "sugared_genericSig": "<Self, F where Self : Swift.Encoder, F : Codextended.AnyDateFormatter>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "encode",
+          "printedName": "encode(_:for:using:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_1"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7EncoderP11CodextendedE6encode_3for5usingy10Foundation4DateV_qd__qd_0_tKs9CodingKeyRd__AC03AnyG9FormatterRd_0_r0_lF",
+          "mangledName": "$ss7EncoderP11CodextendedE6encode_3for5usingy10Foundation4DateV_qd__qd_0_tKs9CodingKeyRd__AC03AnyG9FormatterRd_0_r0_lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : Swift.Encoder, τ_1_0 : Swift.CodingKey, τ_1_1 : Codextended.AnyDateFormatter>",
+          "sugared_genericSig": "<Self, K, F where Self : Swift.Encoder, K : Swift.CodingKey, F : Codextended.AnyDateFormatter>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:s7EncoderP",
+      "mangledName": "$ss7EncoderP",
+      "moduleName": "Swift",
+      "isExternal": true
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "JSONDecoder",
+      "printedName": "JSONDecoder",
+      "declKind": "Class",
+      "usr": "s:10Foundation11JSONDecoderC",
+      "mangledName": "$s10Foundation11JSONDecoderC",
+      "moduleName": "Foundation",
+      "isOpen": true,
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "AnyDecoder",
+          "printedName": "AnyDecoder",
+          "usr": "s:11Codextended10AnyDecoderP",
+          "mangledName": "$s11Codextended10AnyDecoderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "TopLevelDecoder",
+          "printedName": "TopLevelDecoder",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Input",
+              "printedName": "Input",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine15TopLevelDecoderP",
+          "mangledName": "$s7Combine15TopLevelDecoderP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "PropertyListDecoder",
+      "printedName": "PropertyListDecoder",
+      "declKind": "Class",
+      "usr": "s:10Foundation19PropertyListDecoderC",
+      "mangledName": "$s10Foundation19PropertyListDecoderC",
+      "moduleName": "Foundation",
+      "isOpen": true,
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "AnyDecoder",
+          "printedName": "AnyDecoder",
+          "usr": "s:11Codextended10AnyDecoderP",
+          "mangledName": "$s11Codextended10AnyDecoderP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "TopLevelDecoder",
+          "printedName": "TopLevelDecoder",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Input",
+              "printedName": "Input",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:7Combine15TopLevelDecoderP",
+          "mangledName": "$s7Combine15TopLevelDecoderP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Data",
+      "printedName": "Data",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "decoded",
+          "printedName": "decoded(as:using:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Metatype",
+              "printedName": "τ_0_0.Type",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "hasDefaultArg": true
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "AnyDecoder",
+              "printedName": "Codextended.AnyDecoder",
+              "hasDefaultArg": true,
+              "usr": "s:11Codextended10AnyDecoderP"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:10Foundation4DataV11CodextendedE7decoded2as5usingxxm_AD10AnyDecoder_ptKSeRzlF",
+          "mangledName": "$s10Foundation4DataV11CodextendedE7decoded2as5usingxxm_AD10AnyDecoder_ptKSeRzlF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+          "sugared_genericSig": "<T where T : Swift.Decodable>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:10Foundation4DataV",
+      "mangledName": "$s10Foundation4DataV",
+      "moduleName": "Foundation",
+      "declAttributes": [
+        "Frozen"
+      ],
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "ReferenceConvertible",
+          "printedName": "ReferenceConvertible",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "ReferenceType",
+              "printedName": "ReferenceType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSData",
+                  "printedName": "Foundation.NSData",
+                  "usr": "c:objc(cs)NSData"
+                }
+              ]
+            }
+          ],
+          "usr": "s:10Foundation20ReferenceConvertibleP",
+          "mangledName": "$s10Foundation20ReferenceConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "RandomAccessCollection",
+          "printedName": "RandomAccessCollection",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UInt8",
+                  "printedName": "Swift.UInt8",
+                  "usr": "s:s5UInt8V"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Index",
+              "printedName": "Index",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SubSequence",
+              "printedName": "SubSequence",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Indices",
+              "printedName": "Indices",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Range",
+                  "printedName": "Swift.Range<Swift.Int>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "usr": "s:Sn"
+                }
+              ]
+            }
+          ],
+          "usr": "s:Sk",
+          "mangledName": "$sSk"
+        },
+        {
+          "kind": "Conformance",
+          "name": "MutableCollection",
+          "printedName": "MutableCollection",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UInt8",
+                  "printedName": "Swift.UInt8",
+                  "usr": "s:s5UInt8V"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Index",
+              "printedName": "Index",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SubSequence",
+              "printedName": "SubSequence",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:SM",
+          "mangledName": "$sSM"
+        },
+        {
+          "kind": "Conformance",
+          "name": "RangeReplaceableCollection",
+          "printedName": "RangeReplaceableCollection",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "SubSequence",
+              "printedName": "SubSequence",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:Sm",
+          "mangledName": "$sSm"
+        },
+        {
+          "kind": "Conformance",
+          "name": "MutableDataProtocol",
+          "printedName": "MutableDataProtocol",
+          "usr": "s:10Foundation19MutableDataProtocolP",
+          "mangledName": "$s10Foundation19MutableDataProtocolP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ContiguousBytes",
+          "printedName": "ContiguousBytes",
+          "usr": "s:10Foundation15ContiguousBytesP",
+          "mangledName": "$s10Foundation15ContiguousBytesP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "BidirectionalCollection",
+          "printedName": "BidirectionalCollection",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UInt8",
+                  "printedName": "Swift.UInt8",
+                  "usr": "s:s5UInt8V"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Index",
+              "printedName": "Index",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SubSequence",
+              "printedName": "SubSequence",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Indices",
+              "printedName": "Indices",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Range",
+                  "printedName": "Swift.Range<Swift.Int>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "usr": "s:Sn"
+                }
+              ]
+            }
+          ],
+          "usr": "s:SK",
+          "mangledName": "$sSK"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Collection",
+          "printedName": "Collection",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UInt8",
+                  "printedName": "Swift.UInt8",
+                  "usr": "s:s5UInt8V"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Index",
+              "printedName": "Index",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Iterator",
+              "printedName": "Iterator",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Iterator",
+                  "printedName": "Foundation.Data.Iterator",
+                  "usr": "s:10Foundation4DataV8IteratorV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SubSequence",
+              "printedName": "SubSequence",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Indices",
+              "printedName": "Indices",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Range",
+                  "printedName": "Swift.Range<Swift.Int>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "usr": "s:Sn"
+                }
+              ]
+            }
+          ],
+          "usr": "s:Sl",
+          "mangledName": "$sSl"
+        },
+        {
+          "kind": "Conformance",
+          "name": "DataProtocol",
+          "printedName": "DataProtocol",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Regions",
+              "printedName": "Regions",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "CollectionOfOne",
+                  "printedName": "Swift.CollectionOfOne<Foundation.Data>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Data",
+                      "printedName": "Foundation.Data",
+                      "usr": "s:10Foundation4DataV"
+                    }
+                  ],
+                  "usr": "s:s15CollectionOfOneV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:10Foundation12DataProtocolP",
+          "mangledName": "$s10Foundation12DataProtocolP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sequence",
+          "printedName": "Sequence",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Element",
+              "printedName": "Element",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UInt8",
+                  "printedName": "Swift.UInt8",
+                  "usr": "s:s5UInt8V"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "Iterator",
+              "printedName": "Iterator",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Iterator",
+                  "printedName": "Foundation.Data.Iterator",
+                  "usr": "s:10Foundation4DataV8IteratorV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:ST",
+          "mangledName": "$sST"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomReflectable",
+          "printedName": "CustomReflectable",
+          "usr": "s:s17CustomReflectableP",
+          "mangledName": "$ss17CustomReflectableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_ObjectiveCBridgeable",
+          "printedName": "_ObjectiveCBridgeable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "_ObjectiveCType",
+              "printedName": "_ObjectiveCType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSData",
+                  "printedName": "Foundation.NSData",
+                  "usr": "c:objc(cs)NSData"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s21_ObjectiveCBridgeableP",
+          "mangledName": "$ss21_ObjectiveCBridgeableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Decodable",
+          "printedName": "Decodable",
+          "usr": "s:Se",
+          "mangledName": "$sSe"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Encodable",
+          "printedName": "Encodable",
+          "usr": "s:SE",
+          "mangledName": "$sSE"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Decoder",
+      "printedName": "Decoder",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "decodeSingleValue",
+          "printedName": "decodeSingleValue(as:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Metatype",
+              "printedName": "τ_1_0.Type",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ],
+              "hasDefaultArg": true
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7DecoderP11CodextendedE17decodeSingleValue2asqd__qd__m_tKSeRd__lF",
+          "mangledName": "$ss7DecoderP11CodextendedE17decodeSingleValue2asqd__qd__m_tKSeRd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Decoder, τ_1_0 : Swift.Decodable>",
+          "sugared_genericSig": "<Self, T where Self : Swift.Decoder, T : Swift.Decodable>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "decode",
+          "printedName": "decode(_:as:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Metatype",
+              "printedName": "τ_1_0.Type",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ],
+              "hasDefaultArg": true
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7DecoderP11CodextendedE6decode_2asqd__SS_qd__mtKSeRd__lF",
+          "mangledName": "$ss7DecoderP11CodextendedE6decode_2asqd__SS_qd__mtKSeRd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Decoder, τ_1_0 : Swift.Decodable>",
+          "sugared_genericSig": "<Self, T where Self : Swift.Decoder, T : Swift.Decodable>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "decode",
+          "printedName": "decode(_:as:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_1"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Metatype",
+              "printedName": "τ_1_0.Type",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ],
+              "hasDefaultArg": true
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7DecoderP11CodextendedE6decode_2asqd__qd_0__qd__mtKSeRd__s9CodingKeyRd_0_r0_lF",
+          "mangledName": "$ss7DecoderP11CodextendedE6decode_2asqd__qd_0__qd__mtKSeRd__s9CodingKeyRd_0_r0_lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : Swift.Decoder, τ_1_0 : Swift.Decodable, τ_1_1 : Swift.CodingKey>",
+          "sugared_genericSig": "<Self, T, K where Self : Swift.Decoder, T : Swift.Decodable, K : Swift.CodingKey>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "decodeIfPresent",
+          "printedName": "decodeIfPresent(_:as:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "τ_1_0?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Metatype",
+              "printedName": "τ_1_0.Type",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ],
+              "hasDefaultArg": true
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7DecoderP11CodextendedE15decodeIfPresent_2asqd__SgSS_qd__mtKSeRd__lF",
+          "mangledName": "$ss7DecoderP11CodextendedE15decodeIfPresent_2asqd__SgSS_qd__mtKSeRd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Decoder, τ_1_0 : Swift.Decodable>",
+          "sugared_genericSig": "<Self, T where Self : Swift.Decoder, T : Swift.Decodable>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "decodeIfPresent",
+          "printedName": "decodeIfPresent(_:as:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "τ_1_0?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_1"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Metatype",
+              "printedName": "τ_1_0.Type",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_1_0"
+                }
+              ],
+              "hasDefaultArg": true
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7DecoderP11CodextendedE15decodeIfPresent_2asqd__Sgqd_0__qd__mtKSeRd__s9CodingKeyRd_0_r0_lF",
+          "mangledName": "$ss7DecoderP11CodextendedE15decodeIfPresent_2asqd__Sgqd_0__qd__mtKSeRd__s9CodingKeyRd_0_r0_lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : Swift.Decoder, τ_1_0 : Swift.Decodable, τ_1_1 : Swift.CodingKey>",
+          "sugared_genericSig": "<Self, T, K where Self : Swift.Decoder, T : Swift.Decodable, K : Swift.CodingKey>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "decode",
+          "printedName": "decode(_:using:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7DecoderP11CodextendedE6decode_5using10Foundation4DateVSS_qd__tKAC03AnyF9FormatterRd__lF",
+          "mangledName": "$ss7DecoderP11CodextendedE6decode_5using10Foundation4DateVSS_qd__tKAC03AnyF9FormatterRd__lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : Swift.Decoder, τ_1_0 : Codextended.AnyDateFormatter>",
+          "sugared_genericSig": "<Self, F where Self : Swift.Decoder, F : Codextended.AnyDateFormatter>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "decode",
+          "printedName": "decode(_:using:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Date",
+              "printedName": "Foundation.Date",
+              "usr": "s:10Foundation4DateV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_1_1"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:s7DecoderP11CodextendedE6decode_5using10Foundation4DateVqd___qd_0_tKs9CodingKeyRd__AC03AnyF9FormatterRd_0_r0_lF",
+          "mangledName": "$ss7DecoderP11CodextendedE6decode_5using10Foundation4DateVqd___qd_0_tKs9CodingKeyRd__AC03AnyF9FormatterRd_0_r0_lF",
+          "moduleName": "Codextended",
+          "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : Swift.Decoder, τ_1_0 : Swift.CodingKey, τ_1_1 : Codextended.AnyDateFormatter>",
+          "sugared_genericSig": "<Self, K, F where Self : Swift.Decoder, K : Swift.CodingKey, F : Codextended.AnyDateFormatter>",
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:s7DecoderP",
+      "mangledName": "$ss7DecoderP",
+      "moduleName": "Swift",
+      "isExternal": true
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "DateFormatter",
+      "printedName": "DateFormatter",
+      "declKind": "Class",
+      "usr": "c:objc(cs)NSDateFormatter",
+      "moduleName": "Foundation",
+      "isOpen": true,
+      "objc_name": "NSDateFormatter",
+      "declAttributes": [
+        "ObjC",
+        "Dynamic"
+      ],
+      "superclassUsr": "c:objc(cs)NSFormatter",
+      "isExternal": true,
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "Foundation.Formatter",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "AnyDateFormatter",
+          "printedName": "AnyDateFormatter",
+          "usr": "s:11Codextended16AnyDateFormatterP",
+          "mangledName": "$s11Codextended16AnyDateFormatterP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ISO8601DateFormatter",
+      "printedName": "ISO8601DateFormatter",
+      "declKind": "Class",
+      "usr": "c:objc(cs)NSISO8601DateFormatter",
+      "moduleName": "Foundation",
+      "isOpen": true,
+      "intro_Macosx": "10.12",
+      "objc_name": "NSISO8601DateFormatter",
+      "declAttributes": [
+        "Available",
+        "ObjC",
+        "Dynamic"
+      ],
+      "superclassUsr": "c:objc(cs)NSFormatter",
+      "isExternal": true,
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "Foundation.Formatter",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "AnyDateFormatter",
+          "printedName": "AnyDateFormatter",
+          "usr": "s:11Codextended16AnyDateFormatterP",
+          "mangledName": "$s11Codextended16AnyDateFormatterP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}
