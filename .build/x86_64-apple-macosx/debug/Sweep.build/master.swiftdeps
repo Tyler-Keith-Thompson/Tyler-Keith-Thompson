@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
-options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
-build_start_time: [1641269795, 94808101]
-build_end_time: [1641269795, 132622957]
-inputs:
-  "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/.build/checkouts/sweep/Sources/Sweep/Sweep.swift": [1641259594, 917236804]

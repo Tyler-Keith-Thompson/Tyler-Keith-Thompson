@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
-options: "cc8d7cc55be3f0b45407c1d49f03ee17a224954b9bd1166cd075381672d6eedd"
-build_start_time: [1641269822, 828116893]
-build_end_time: [1641269823, 700636863]
-inputs:
-  "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/Sources/Resume/ResumeTheme.swift": [1641269583, 246787548]
-  "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/Sources/Resume/main.swift": [1641269818, 794506311]

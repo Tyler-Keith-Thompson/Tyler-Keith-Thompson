@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
-options: "cc8d7cc55be3f0b45407c1d49f03ee17a224954b9bd1166cd075381672d6eedd"
-build_start_time: [1641259629, 848349094]
-build_end_time: [1641259630, 324973106]
-inputs:
-  "/Users/tylerthompson/workspace/Tyler-Keith-Thompson/Sources/Resume/main.swift": [1641259530, 598262310]
