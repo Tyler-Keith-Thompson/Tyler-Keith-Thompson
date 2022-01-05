@@ -80,7 +80,7 @@ struct Resume: Website {
         Many of my projects were with clients who had NDAs. Therefore my portfolio is primarily made up of projects that I did on the side on top of my full time job.
 
         ## [SwiftCurrent](https://www.github.com/wwt/SwiftCurrent)
-        ![SwiftCurrent Logo](/images/logos/SwiftCurrent-social.png)
+        ![SwiftCurrent Logo](images/logos/SwiftCurrent-social.png)
 
         SwiftCurrent is one of the more interesting and challenging projects I've worked on. It started with an observation between me and my colleagues that we were running into the same kinds of workflow issues between projects. Architectural patterns that existed to solve those problems were cumbersome and really just ended up moving the exact same problem to a different layer.
 
