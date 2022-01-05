@@ -26,6 +26,7 @@ struct IndexHTML {
                 mainNav
                 Wrapper {
                     Div {
+                        Markdown("### Note: This entire website was built in Swift!\n\nI wanted to prove that it wasn't just a language for iOS development. This used a static site generator called Publish written in Swift! If you'd like you can see the [code that backs this resume](https://github.com/Tyler-Keith-Thompson/Tyler-Keith-Thompson/tree/resume) or you can just [check out my GitHub profile](https://github.com/tyler-keith-thompson)")
                         profileCard
                         Div {
                             Div {
