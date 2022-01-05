@@ -72,7 +72,7 @@ struct IndexHTML {
                         Element(name: "dt") { Text("RESIDENCE") }.class("text-upper")
                         Element(name: "dd") { Text(context.site.content.residence) }
 
-                        Element(name: "dt") { Text("Years in industry") }.class("text-upper")
+                        Element(name: "dt") { Text("Experience") }.class("text-upper")
                         Element(name: "dd") { Text("\(context.site.content.yearsInIndustry)") }
 
                         Element(name: "dt") { Text("Primary Skill") }.class("text-upper")

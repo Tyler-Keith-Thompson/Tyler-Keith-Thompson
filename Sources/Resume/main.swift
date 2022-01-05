@@ -24,7 +24,7 @@ struct Resume: Website {
         I spend most of my free time honing my skills in my favorite programming language (Swift). I've become an avid believer in automated testing and DevOps practices. I incorporate that into both my professional code and my personal code.
         """
         let residence = "Colorado, United States"
-        let yearsInIndustry = 14
+        let yearsInIndustry = "14 years in IT"
         let primarySkill = "Apple Development"
         let jobs = [
             Job(name: "World Wide Technology (WWT)",
