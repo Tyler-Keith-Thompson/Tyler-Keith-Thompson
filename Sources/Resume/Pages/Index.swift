@@ -24,72 +24,9 @@ struct IndexHTML {
             .head(for: index, on: context.site),
             .body {
                 mainNav
-                Div {
-                    Navigation {
-                        List {
-                            ListItem {
-                                Link(url: "#about") {
-                                    Image("images/uploads/avatar/avatar-58x58-default.png")
-                                        .class("avatar avatar-58")
-                                        .attribute(named: "width", value: "58")
-                                        .attribute(named: "height", value: "58")
-                                }.attribute(named: "data-tooltip", value: "About")
-                            }
-                            ListItem {
-                                Link(url: "#experience") {
-                                    Span().class("crt-icon crt-icon-experience")
-                                }.attribute(named: "data-tooltip", value: "Experience")
-                            }
-                            ListItem {
-                                Link(url: "#portfolio") {
-                                    Span().class("crt-icon crt-icon-portfolio")
-                                }.attribute(named: "data-tooltip", value: "Portfolio")
-                            }
-                            ListItem {
-                                Link(url: "#testimonials") {
-                                    Span().class("crt-icon crt-icon-references")
-                                }.attribute(named: "data-tooltip", value: "References")
-                            }
-                            ListItem {
-                                Link(url: "#contact") {
-                                    Span().class("crt-icon crt-icon-contact")
-                                }.attribute(named: "data-tooltip", value: "Contact")
-                            }
-                        }.class("clear-list").style("display: inline;")
-                    }.id("crt-nav").class("crt-nav")
-                }.id("crt-nav-wrap").style("position: sticky;top: 0;")
                 Wrapper {
                     Div {
-                        Div {
-                            Div {
-                                Div {
-                                    Div {
-                                        Div {
-                                            Image("images/uploads/avatar/avatar-58x58-default.png")
-                                                .class("avatar avatar-58")
-                                                .attribute(named: "width", value: "195")
-                                                .attribute(named: "height", value: "195")
-                                        }.class("crt-card-avatar")
-                                        Div {
-                                            H2(context.site.content.profileName)
-                                            Paragraph(context.site.content.profileTitle).class("text-muted")
-                                            List {
-                                                ListItem {
-                                                    Link(url: "https://www.linkedin.com/in/tyler-k-thompson/") {
-                                                        Span().class("crt-icon crt-icon-linkedin")
-                                                    }.linkTarget(.blank)
-                                                }
-                                                ListItem {
-                                                    Link(url: "https://www.github.com/tyler-keith-thompson") {
-                                                        Span().class("crt-icon crt-icon-github")
-                                                    }.linkTarget(.blank)
-                                                }
-                                            }.class("crt-social clear-list")
-                                        }.class("crt-card-info")
-                                    }.class("crt-card bg-primary text-center")
-                                }.class("crt-side-box-item")
-                            }.id("crt-side-box")
-                        }.id("crt-side-box-wrap").class("crt-sticky")
+                        profileCard
                         Div {
                             Div {
                                 Div {
@@ -97,6 +34,8 @@ struct IndexHTML {
                                         aboutMe
                                         personalInformation
                                         workExperience
+                                        portfolio
+                                        contact
                                     }.class("crt-paper-cont paper-padd clear-mrg")
                                 }.class("crt-paper clearfix")
                             }.class("crt-paper-layers")
@@ -153,6 +92,24 @@ struct IndexHTML {
         }.class("section brd-btm padd-box")
     }
 
+    var portfolio: Component {
+        Div { // should be a section
+            Element(name: "a") { }.attribute(named: "name", value: "portfolio")
+            Div {
+                Markdown(context.site.content.portfolioMarkdown)
+            }.class("row")
+        }.class("section brd-btm padd-box")
+    }
+
+    var contact: Component {
+        Div { // should be a section
+            Element(name: "a") { }.attribute(named: "name", value: "contact")
+            Div {
+                Markdown(context.site.content.contactMarkdown)
+            }.class("row")
+        }.class("section brd-btm padd-box")
+    }
+
     var workExperience: Component {
         ComponentGroup {
             Element(name: "a") { }.attribute(named: "name", value: "experience")
@@ -160,87 +117,105 @@ struct IndexHTML {
             H2("Work Experience").class("title-lg text-upper padd-box")
 
             Div {
-                Job(name: "World Wide Technology (WWT)",
-                    imageUrl: "images/logos/WWT_Logo_RGB_Color.png",
-                    startMonth: "Nov",
-                    startYear: "2016",
-                    endMonth: nil,
-                    endYear: nil,
-                    description: """
-                    ### Healthcare:
-                    - Worked with one of the largest healthcare providers in the US
-                    - Managed a team of teams of around 100 developers as an Architect
-                    - Directly engaged with stakeholders to help design and build highly scalable systems
-                    - Designed integrations between multiple EMRs using FHIR
-                    - Created engineering best practices and architectural guidance documentation
-
-                    ### Also worked with:
-                    - Banking
-                    - Identity Proofing
-                    - Endpoint Security
-
-                    ### Roles held while working at WWT:
-                    - Software Engineer
-                    - Tech Lead
-                    - Principal Engineer
-                    - Software Architect (systems architecture)
-                    """).html
-
-                Job(name: "New Mexico Commission for the Blind",
-                    imageUrl: "images/logos/nmcftb-logo.png",
-                    startMonth: "May",
-                    startYear: "2013",
-                    endMonth: "Feb",
-                    endYear: "2016",
-                    description: """
-                    - Initial contract was for three months but satisfaction from the employer resulted in an offer for a full time position. During that time I setup the network server throughout the dormitory and field office, organized and taught philosophy classes for training purposes, coordinated activity outings, and conducted day-to-day running of the center when the director was absent.
-                    - Worked on several iPhone apps and was shortly promoted to a software engineering position in the administrative office. Developed the state website, an internal web app to track time in regards to federal grants and regulations (with millions of dollars at stake), and publicly released 2 apps.
-                    """).html
-
-                Job(name: "Freelance - Voc Rehab Instructor",
-                    imageUrl: nil,
-                    startMonth: "May",
-                    startYear: "2008",
-                    endMonth: "May",
-                    endYear: "2013",
-                    description: """
-                    During this time I taught people who recently became blind how to enter back into the workforce. I did individual tutoring with a variety of different clients with the goal of them becoming gainfully employed. This taught me invaluable lessons about accessibility, inclusive design, and the challenges of the industry as faced by those who require inclusive design.
-                    """).html
+                ComponentGroup(members: context.site.content.jobs.map { $0.html })
             }.class("education")
         }
     }
 
-    var mainNav: Component {
-        Header {
+    var profileCard: Component {
+        Div {
             Div {
                 Div {
                     Div {
                         Div {
+                            Image("images/uploads/avatar/avatar-58x58-default.png")
+                                .class("avatar avatar-58")
+                                .attribute(named: "width", value: "195")
+                                .attribute(named: "height", value: "195")
+                        }.class("crt-card-avatar")
+                        Div {
+                            H2(context.site.content.profileName)
+                            Paragraph(context.site.content.profileTitle).class("text-muted")
+                            List {
+                                ListItem {
+                                    Link(url: "https://www.linkedin.com/in/tyler-k-thompson/") {
+                                        Span().class("crt-icon crt-icon-linkedin")
+                                    }.linkTarget(.blank)
+                                }
+                                ListItem {
+                                    Link(url: "https://www.github.com/tyler-keith-thompson") {
+                                        Span().class("crt-icon crt-icon-github")
+                                    }.linkTarget(.blank)
+                                }
+                            }.class("crt-social clear-list")
+                        }.class("crt-card-info")
+                    }.class("crt-card bg-primary text-center")
+                }.class("crt-side-box-item")
+            }.id("crt-side-box")
+        }.id("crt-side-box-wrap").class("crt-sticky")
+    }
+
+    var mainNav: Component {
+        ComponentGroup {
+            Header {
+                Div {
+                    Div {
+                        Div {
                             Div {
-                                Navigation {
-                                    List {
-                                        ListItem {
-                                            Link("Home", url: "")
-                                        }
-                                        ListItem {
-                                            Link("Portfolio", url: "#portfolio")
-                                        }
-                                        ListItem {
-                                            Link("Contact", url: "#contact")
-                                        }
-                                    }.class("clear-list")
-                                }.id("crt-main-nav")
-                            }.class("crt-nav-container crt-container hidden-sm hidden-xs")
-                        }.id("crt-head-col2").class("crt-head-col text-right")
-//                        Div {
-//                            Button {
-//                                Span { }.class("crt-icon crt-icon-side-bar-icon")
-//                            }.id("crt-sidebar-btn").class("btn btn-icon btn-shade")
-//                        }.id("crt-head-col3").class("crt-head-col text-right")
-                    }.class("crt-head-row")
-                }.class("crt-container-sm")
-            }.class("crt-head-inner crt-container")
-        }.id("crt-header")
+                                Div {
+                                    Navigation {
+                                        List {
+                                            ListItem {
+                                                Link("Home", url: "")
+                                            }
+                                            ListItem {
+                                                Link("Experience", url: "#experience")
+                                            }
+                                            ListItem {
+                                                Link("Portfolio", url: "#portfolio")
+                                            }
+                                            ListItem {
+                                                Link("Contact", url: "#contact")
+                                            }
+                                        }.class("clear-list")
+                                    }.id("crt-main-nav")
+                                }.class("crt-nav-container crt-container hidden-sm hidden-xs")
+                            }.id("crt-head-col2").class("crt-head-col text-right")
+                        }.class("crt-head-row")
+                    }.class("crt-container-sm")
+                }.class("crt-head-inner crt-container")
+            }.id("crt-header")
+
+            Div {
+                Navigation {
+                    List {
+                        ListItem {
+                            Link(url: "#about") {
+                                Image("images/uploads/avatar/avatar-58x58-default.png")
+                                    .class("avatar avatar-58")
+                                    .attribute(named: "width", value: "58")
+                                    .attribute(named: "height", value: "58")
+                            }.attribute(named: "data-tooltip", value: "About")
+                        }
+                        ListItem {
+                            Link(url: "#experience") {
+                                Span().class("crt-icon crt-icon-experience")
+                            }.attribute(named: "data-tooltip", value: "Experience")
+                        }
+                        ListItem {
+                            Link(url: "#portfolio") {
+                                Span().class("crt-icon crt-icon-portfolio")
+                            }.attribute(named: "data-tooltip", value: "Portfolio")
+                        }
+                        ListItem {
+                            Link(url: "#contact") {
+                                Span().class("crt-icon crt-icon-contact")
+                            }.attribute(named: "data-tooltip", value: "Contact")
+                        }
+                    }.class("clear-list").style("display: inline;")
+                }.id("crt-nav").class("crt-nav")
+            }.id("crt-nav-wrap").style("position: sticky;top: 0;")
+        }
     }
 }
 
@@ -273,47 +248,6 @@ private struct ProficiencySlider {
         .attribute(named: "aria-valuenow", value: "\(currentLevel)")
         .attribute(named: "aria-valuemin", value: "0")
         .attribute(named: "aria-valuemax", value: "10")
-    }
-}
-
-private struct Job {
-    let name: String
-    let imageUrl: URLRepresentable?
-    let startMonth: String
-    let startYear: String
-    let endMonth: String?
-    let endYear: String?
-    let description: String
-
-    var html: Component {
-        Div {
-            Element(name: "time") {
-                Span {
-                    Text("\(startMonth) ")
-                    Element(name: "strong") {
-                        Text(startYear)
-                    }.class("text-upper")
-                    Text(" - ")
-                    if let endMonth = endMonth, let endYear = endYear {
-                        Text("\(endMonth) ")
-                        Element(name: "strong") {
-                            Text(endYear)
-                        }.class("text-upper")
-                    } else {
-                        Element(name: "strong") {
-                            Text("PRESENT")
-                        }.class("text-upper")
-                    }
-                }
-            }.class("education-date")
-            if let imageUrl = imageUrl {
-                Div {
-                    Image(url: imageUrl, description: "")
-                }.class("education-logo")
-            }
-            Span(name).class("education-company")
-            Markdown(description)
-        }.class("education-box")
     }
 }
 
