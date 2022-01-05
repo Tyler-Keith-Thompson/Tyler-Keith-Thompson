@@ -129,7 +129,7 @@ struct IndexHTML {
                 Div {
                     Div {
                         Div {
-                            Image("images/uploads/avatar/avatar-58x58-default.png")
+                            Image("images/uploads/avatar/profile-pic-modified.png")
                                 .class("avatar avatar-58")
                                 .attribute(named: "width", value: "195")
                                 .attribute(named: "height", value: "195")
@@ -192,7 +192,7 @@ struct IndexHTML {
                     List {
                         ListItem {
                             Link(url: "#about") {
-                                Image("images/uploads/avatar/avatar-58x58-default.png")
+                                Image("images/uploads/avatar/profile-pic-modified.png")
                                     .class("avatar avatar-58")
                                     .attribute(named: "width", value: "58")
                                     .attribute(named: "height", value: "58")
