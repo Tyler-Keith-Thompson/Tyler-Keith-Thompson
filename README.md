@@ -7,7 +7,7 @@ My primary motivation is helping people. As Software Engineer's we can sometimes
 
 I spend most of my free time honing my skills in my favorite programming language (Swift). I've become an avid believer in automated testing and DevOps practices. I incorporate that into both my professional code and my personal code.
 
-I have managed to become a Principal Engineer largely by working with people far smarter than I am, and learning from them. I owe much of my success specifically to World Wide Technology where I continue to enjoy opportunities to work with a very diverse group of intelligent people.
+I have managed to become a Principal Engineer largely by working with people far smarter than I am, and learning from them.
 
 ### 📊 GitHub Analytics
 
