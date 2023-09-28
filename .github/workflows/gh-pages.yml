@@ -16,7 +16,7 @@ jobs:
         
     - name: Build Publish
       run: |
-        sudo apt install -y make
+        apt install -y make
         git clone https://github.com/JohnSundell/Publish.git
         cd Publish
         make
