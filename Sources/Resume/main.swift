@@ -27,12 +27,26 @@ struct Resume: Website {
         let yearsInIndustry = "14 years in IT"
         let primarySkill = "Apple Development"
         let jobs = [
+            Job(name: "Zillow",
+                imageUrl: "images/logos/Z-510fe419.png",
+                startMonth: "May",
+                startYear: "2023",
+                endMonth: nil,
+                endYear: nil,
+                description: """
+                ### Principal Engineer:
+                My first year and a half at Zillow was spent as a Principal Engineer, at first on a feature team and eventually on the iOS App Platform team. During my time on the platform team I designed our modular architecture approach, created a vision for how the platform team could help Zillow scale with an increasingly large number of engineers, and tackled many of the major challenges devs were facing (build times, CI/CD, architecture, testing, communication, observability, on-call rotations, guiding principles, etc...)
+                
+                ### Senior Manager:
+                Due to my leadership of the platform iOS team I transitioned into a Senior Manager position. I still work directly with the App Platform team driving the vision and tackling the big challenges Zillow faces with its mobile applications.
+                """),
+            
             Job(name: "World Wide Technology (WWT)",
                 imageUrl: "images/logos/WWT_Logo_RGB_Color.png",
                 startMonth: "Nov",
                 startYear: "2016",
-                endMonth: nil,
-                endYear: nil,
+                endMonth: "April",
+                endYear: "2022",
                 description: """
                 ### Healthcare:
                 - Worked with one of the largest healthcare providers in the US
