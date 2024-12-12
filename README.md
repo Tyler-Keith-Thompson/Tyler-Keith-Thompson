@@ -1,6 +1,6 @@
 ### Hi there 👋
-- 🔭 I’m primarily working on [SwiftCurrent](https://www.github.com/wwt/SwiftCurrent) in my spare time, I also dedicate some time to [CucumberSwift](https://www.github.com/tyler-keith-thompson/CucumberSwift).
-- 🌱 I’m currently learning Rust in my spare time, but mostly I'm an Apple Developer. 
+- 🔭 I’m primarily working on [Afluent](https://github.com/Tyler-Keith-Thompson/Afluent) in my spare time.
+- 🌱 I’m currently playing around a lot with Vapor and server side Swift!
 
 #### About me:
 My primary motivation is helping people. As Software Engineer's we can sometimes get so wrapped up in a problem we forget what the end goal is. I do my best to make sure the software I help write makes a difference, and is based off of user needs.
