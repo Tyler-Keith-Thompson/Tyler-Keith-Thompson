@@ -15,7 +15,7 @@ struct Resume: Website {
 
     struct Content {
         let profileName = "Tyler Thompson"
-        let profileTitle = "Principal Software Engineer - Apple Platforms"
+        let profileTitle = "Sr Software Engineering Manager - Mobile App Platform (iOS)"
         let aboutMe = """
         Senior Engineering Manager at Zillow leading the Mobile App Platform team, responsible for the strategy and execution that enable hundreds of developers to build, test, and ship faster across one of the largest Swift codebases in the industry. I focus on scaling teams and systems to improve developer velocity, platform reliability, and architectural cohesion. Known for clear thinking, strong technical judgment, and developing senior engineers into leaders, I bridge deep engineering insight with organizational strategy to deliver durable impact.
         """
