@@ -17,14 +17,10 @@ struct Resume: Website {
         let profileName = "Tyler Thompson"
         let profileTitle = "Principal Software Engineer - Apple Platforms"
         let aboutMe = """
-        My primary motivation is helping people. As Software Engineer's we can sometimes get so wrapped up in a problem we forget what the end goal is. I do my best to make sure the software I help write makes a difference, and is based off of user needs.
-
-        I have managed to become a Principal Engineer largely by working with people far smarter than I am, and learning from them. I owe much of my success specifically to World Wide Technology where I continue to enjoy opportunities to work with a very diverse group of intelligent people.
-
-        I spend most of my free time honing my skills in my favorite programming language (Swift). I've become an avid believer in automated testing and DevOps practices. I incorporate that into both my professional code and my personal code.
+        I'm a long-time
         """
         let residence = "Colorado, United States"
-        let yearsInIndustry = "16 years in IT"
+        let yearsInIndustry = "18 years in tech"
         let primarySkill = "Apple Development"
         let jobs = [
             Job(name: "Zillow",
@@ -34,11 +30,20 @@ struct Resume: Website {
                 endMonth: nil,
                 endYear: nil,
                 description: """
-                ### Principal Engineer:
-                My first year and a half at Zillow was spent as a Principal Engineer, at first on a feature team and eventually on the iOS App Platform team. During my time on the platform team I designed our modular architecture approach, created a vision for how the platform team could help Zillow scale with an increasingly large number of engineers, and tackled many of the major challenges devs were facing (build times, CI/CD, architecture, testing, communication, observability, on-call rotations, guiding principles, etc...)
-                
                 ### Senior Manager:
                 Due to my leadership of the platform iOS team I transitioned into a Senior Manager position. I still work directly with the App Platform team driving the vision and tackling the big challenges Zillow faces with its mobile applications.
+                
+                During my time as manager I lead my team through modernizing Zillow's platform. 
+                - We released a distributed build cache that improved build speed for all mobile developers by 90%. 
+                - We optimized our usage of infrastructure with techniques like build and test avoidance, and intelligent unsharding. This lead to us managing to keep infrastructure costs relatively flat while continually increasing the number of committers and features being added.
+                - I engaged with a vendor who was beta testing a flaky test quarantining solution. If we hadn't released flaky test quarantining any given PR would've had between 3% and 10% chance of merging. Thanks to our flaky test management any given PR had a ~90% chance of merging.
+                - We built a custom merge queue due to GitLab's merge train struggling with our monorepo. This added bleeding edge features which added much needed stability to our merge queues in our large monorepo.
+                - I created the architectural vision and direction every year I was at Zillow, starting in 2023.
+                - Work that I started as a Principal Engineer to build a dependency injection framework became the backbone of Zillow's Swift applications, including server-side and mobile.
+                - I created Afluent, and open source Combine alternative that enabled Zillow to move away from Combine and adopt Swift concurrency features with ease. This became ubiquitous for Swift development at Zillow.
+
+                ### Principal Engineer:
+                My first year and a half at Zillow was spent as a Principal Engineer, at first on a feature team and eventually on the iOS App Platform team. During my time on the platform team I designed our modular architecture approach, created a vision for how the platform team could help Zillow scale with an increasingly large number of engineers, and tackled many of the major challenges devs were facing (build times, CI/CD, architecture, testing, communication, observability, on-call rotations, guiding principles, etc...)
                 """),
             
             Job(name: "World Wide Technology (WWT)",
@@ -93,14 +98,19 @@ struct Resume: Website {
 
         Many of my projects were with clients who had NDAs. Therefore my portfolio is primarily made up of projects that I did on the side on top of my full time job.
 
-        ## [SwiftCurrent](https://www.github.com/wwt/SwiftCurrent)
+        ## [Afluent](https://github.com/Tyler-Keith-Thompson/Afluent)
+        ![AfluentLogo](https://github.com/Tyler-Keith-Thompson/Afluent/assets/33705774/ba1b24b2-cd70-4c9c-824a-e89ee89348a8)
+        
+        Afluent is a Combine alternative build entirely with Swift Concurrency. Since Apple made it apparent that Combine was not getting any new updates, it was necessary to have some kind of reactive alternative. Given that Swift Concurrency works fundamentally differently, this required a lot of careful thought and consideration. Afluent is heavily in-use at Zillow and is a battle tested and ready-to-use Combine alternative that brings reactive patterns to Swift concurrency!
+        
+        ## [SwiftCurrent -- abandoned after I left WWT](https://www.github.com/wwt/SwiftCurrent)
         ![SwiftCurrent Logo](images/logos/SwiftCurrent-social.png)
 
         SwiftCurrent is one of the more interesting and challenging projects I've worked on. It started with an observation between me and my colleagues that we were running into the same kinds of workflow issues between projects. Architectural patterns that existed to solve those problems were cumbersome and really just ended up moving the exact same problem to a different layer.
 
         SwiftCurrent started with me working on the weekends for 2 years just building up something that worked. Eventually, it got adopted by WWT and staffed and within months became the most successful Open Source project WWT had ever made. I'm incredibly proud of the work the team and I did and where appropriate I love to bring in SwiftCurrent to continue doing what it's good at.
 
-        ## [CucumberSwift](https://www.github.com/Tyler-Keith-Thompson/CucumberSwift)
+        ## [CucumberSwift -- In maintenance mode](https://www.github.com/Tyler-Keith-Thompson/CucumberSwift)
         CucumberSwift never gained much traction as an OSS project but it remains a very useful library for those who use BDD (Behavior Driven Development). Previously the only real option was Cucumberish, which had a lot of overhead and was very difficult to install. I decided to create a lightweight and (as much as possible) Swift-Only version of Cucumber.
         """
 
