@@ -138,5 +138,7 @@ try Resume().publish(using: [
     .sortItems(by: \.date, order: .descending),
     .generateHTML(withTheme: .resume),
     .generateSiteMap(),
-    .deploy(using: .gitHub("Tyler-Keith-Thompson/Tyler-Keith-Thompson", branch: "refs/remotes/origin/gh-pages"))
+    .deploy(using: .gitHub("Tyler-Keith-Thompson/Tyler-Keith-Thompson",
+                           branch: "refs/remotes/origin/gh-pages",
+                           useSSH: true))
 ])
