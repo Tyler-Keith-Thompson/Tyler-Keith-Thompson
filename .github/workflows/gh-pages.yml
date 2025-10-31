@@ -36,6 +36,12 @@ jobs:
     - name: Generate Site
       run: publish generate
 
+    - name: Archive pages site
+      uses: actions/upload-artifact@v4
+      with:
+        name: github-pages
+        path: Output
+
     - name: Deploy
       id: deployment
       uses: actions/deploy-pages@v4
